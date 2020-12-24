@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\andre\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\andre\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Initium.-1802509940.00" t="ExcludeRecursive" />
+    <e p="C:\Users\andre\Documents\code\project-initium\initium-framework" t="IncludeFlat">
+      <e p="Examples" t="Include" />
+      <e p="Initium.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Shared" t="Include">
+        <e p="Initium.Shared" t="IncludeRecursive">
+          <e p="GlobalSuppressions.cs" t="Include" />
+          <e p="Initium.Shared.projitems" t="Include" />
+          <e p="Initium.Shared.shproj" t="IncludeRecursive" />
+          <e p="stylecop.json" t="Include" />
+        </e>
+      </e>
+      <e p="Source" t="Include">
+        <e p="Api" t="Include">
+          <e p="Authentication" t="Include">
+            <e p="Initium.Api.Authentication.AzureActiveDirectoryB2C" t="IncludeRecursive">
+              <e p="bin" t="ExcludeRecursive" />
+              <e p="Initium.Api.Authentication.AzureActiveDirectoryB2C.csproj" t="IncludeRecursive" />
+              <e p="obj" t="ExcludeRecursive">
+                <e p="Debug" t="Include">
+                  <e p="net5.0" t="Include">
+                    <e p="Initium.Api.Authentication.AzureActiveDirectoryB2C.AssemblyInfo.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+            <e p="Initium.Api.Authentication.Core" t="IncludeRecursive">
+              <e p="bin" t="ExcludeRecursive" />
+              <e p="Constants" t="Include">
+                <e p="MultiTenantErrorCodes.cs" t="Include" />
+              </e>
+              <e p="Database" t="Include">
+                <e p="AuthenticationDbMigrationEngine.cs" t="Include" />
+                <e p="Scripts" t="Include">
+                  <e p="20201217-2214_InitUser.sql" t="Include" />
+                </e>
+              </e>
+              <e p="Domain" t="Include">
+                <e p="AggregateModels" t="Include">
+                  <e p="UserAggregate" t="Include">
+                    <e p="IUser.cs" t="Include" />
+                    <e p="IUserRepository.cs" t="Include" />
+                    <e p="User.cs" t="Include" />
+                  </e>
+                </e>
+                <e p="CommandHandlers" t="Include">
+                  <e p="UserAggregate" t="Include">
+                    <e p="ChangePasswordCommandHandler.cs" t="Include" />
+                    <e p="CreateInitialUserCommandHandler.cs" t="Include" />
+                    <e p="CreateUserCommandHandler.cs" t="Include" />
+                    <e p="DisableUserCommandHandler.cs" t="Include" />
+                    <e p="EnableUserCommandHandler.cs" t="Include" />
+                  </e>
+                </e>
+                <e p="Commands" t="Include">
+                  <e p="UserAggregate" t="Include">
+                    <e p="AddUserFromProviderCommand.cs" t="Include" />
+                    <e p="ChangePasswordCommand.cs" t="Include" />
+                    <e p="CreateInitialUserCommand.cs" t="Include" />
+                    <e p="CreateUserCommand.cs" t="Include" />
+                    <e p="DisableUserCommand.cs" t="Include" />
+                    <e p="EnableUserCommand.cs" t="Include" />
+                  </e>
+                </e>
+                <e p="CommandValidators" t="Include">
+                  <e p="UserAggregate" t="Include">
+                    <e p="AddUserFromProviderCommandValidator.cs" t="Include" />
+                    <e p="ChangePasswordCommandValidator.cs" t="Include" />
+                    <e p="CreateInitialUserCommandValidator.cs" t="Include" />
+                    <e p="CreateUserCommandValidator.cs" t="Include" />
+                    <e p="DisableUserCommandValidator.cs" t="Include" />
+                    <e p="EnableUserCommandValidator.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="Extensions" t="Include">
+                <e p="IRequestExecutorBuilderExtensions.cs" t="Include" />
+                <e p="IServiceCollectionExtensions.cs" t="Include" />
+              </e>
+              <e p="GraphQL" t="Include">
+                <e p="MutationObjectTypeExtension.cs" t="Include" />
+                <e p="QueryObjectTypeExtension.cs" t="Include" />
+              </e>
+              <e p="Infrastructure" t="Include">
+                <e p="EntityTypeConfigurations" t="Include">
+                  <e p="UserEntityTypeConfiguration.cs" t="Include" />
+                </e>
+                <e p="IIdentityProviderClient.cs" t="Include" />
+              </e>
+              <e p="Initium.Api.Authentication.Core.csproj" t="IncludeRecursive" />
+              <e p="obj" t="ExcludeRecursive">
+                <e p="Debug" t="Include">
+                  <e p="netstandard2.1" t="Include">
+                    <e p="Initium.Api.Authentication.Core.AssemblyInfo.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="Initium.Api.Core" t="IncludeRecursive">
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="Contracts" t="Include">
+              <e p="Domain" t="Include">
+                <e p="IAggregateRoot.cs" t="Include" />
+                <e p="IEntity.cs" t="Include" />
+                <e p="IRepository`1.cs" t="Include" />
+                <e p="IUnitOfWork.cs" t="Include" />
+                <e p="ValidationCodes.cs" t="Include" />
+              </e>
+              <e p="Queries" t="Include">
+                <e p="IReadOnlyEntity.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Database" t="Include">
+              <e p="DbSchemaAwareModelCacheKeyFactory.cs" t="Include" />
+              <e p="EntityTypeConfigurationProvider.cs" t="Include" />
+              <e p="GenericDataContext.cs" t="Include" />
+              <e p="IDbMigrationEngine.cs" t="Include" />
+              <e p="ISchemaIdentifier.cs" t="Include" />
+            </e>
+            <e p="Domain" t="Include">
+              <e p="Entity.cs" t="Include" />
+              <e p="ErrorCodes.cs" t="Include" />
+              <e p="ErrorData.cs" t="Include" />
+            </e>
+            <e p="Exceptions" t="Include">
+              <e p="CustomException.cs" t="Include" />
+            </e>
+            <e p="Extensions" t="Include">
+              <e p="MediatorExtensions.cs" t="Include" />
+              <e p="ModelBuilderExtensions.cs" t="Include" />
+            </e>
+            <e p="GraphQL" t="Include">
+              <e p="CustomInputValidationMiddleware.cs" t="Include" />
+              <e p="MutationType.cs" t="Include" />
+              <e p="QueryType.cs" t="Include" />
+              <e p="TypesGuidType.cs" t="Include" />
+            </e>
+            <e p="Initium.Api.Core.csproj" t="IncludeRecursive" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netstandard2.1" t="Include">
+                  <e p="Initium.Api.Core.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="ServiceRegistrationResult.cs" t="Include" />
+            <e p="Settings" t="Include">
+              <e p="DataSettings.cs" t="Include" />
+            </e>
+          </e>
+          <e p="MultiTenant" t="Include">
+            <e p="Initium.Api.MultiTenant" t="IncludeRecursive">
+              <e p="bin" t="ExcludeRecursive" />
+              <e p="Constants" t="Include">
+                <e p="MultiTenantErrorCodes.cs" t="Include" />
+              </e>
+              <e p="DependencyInjection" t="Include">
+                <e p="MultiTenantBuilder.cs" t="Include" />
+              </e>
+              <e p="Domain" t="Include">
+                <e p="AggregatesModel" t="Include">
+                  <e p="TenantAggregate" t="Include">
+                    <e p="ITenant.cs" t="Include" />
+                    <e p="ITenantRepository.cs" t="Include" />
+                    <e p="Tenant.cs" t="Include" />
+                  </e>
+                </e>
+                <e p="CommandHandlers" t="Include">
+                  <e p="TenantAggregate" t="Include">
+                    <e p="CreateTenantCommandHandler.cs" t="Include" />
+                    <e p="DisableTenantCommandHandler.cs" t="Include" />
+                    <e p="EnableTenantCommandHandler.cs" t="Include" />
+                    <e p="UpdateTenantCommandHandler.cs" t="Include" />
+                  </e>
+                </e>
+                <e p="Commands" t="Include">
+                  <e p="TenantAggregate" t="Include">
+                    <e p="CreateTenantCommand.cs" t="Include" />
+                    <e p="DisableTenantCommand.cs" t="Include" />
+                    <e p="EnableTenantCommand.cs" t="Include" />
+                    <e p="UpdateTenantCommand.cs" t="Include" />
+                  </e>
+                </e>
+                <e p="CommandValidators" t="Include">
+                  <e p="TenantAggregate" t="Include">
+                    <e p="CreateTenantCommandValidator.cs" t="Include" />
+                    <e p="DisableTenantCommandValidator.cs" t="Include" />
+                    <e p="EnableTenantCommandValidator.cs" t="Include" />
+                    <e p="UpdateTenantCommandValidator.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="Extensions" t="Include">
+                <e p="IRequestExecutorBuilderExtensions.cs" t="Include" />
+                <e p="IServiceCollectionExtensions.cs" t="Include" />
+              </e>
+              <e p="GraphQL" t="Include">
+                <e p="Inputs" t="Include">
+                  <e p="CreateTenantInput.cs" t="Include" />
+                  <e p="DisableTenantInput.cs" t="Include" />
+                  <e p="EnableTenantInput.cs" t="Include" />
+                  <e p="UpdateTenantInput.cs" t="Include" />
+                </e>
+                <e p="Types" t="Include">
+                  <e p="EntityTypes" t="Include">
+                    <e p="TenantType.cs" t="Include" />
+                  </e>
+                  <e p="InputTypes" t="Include">
+                    <e p="CreateTenantInputType.cs" t="Include" />
+                  </e>
+                  <e p="MutationObjectTypeExtension.cs" t="Include" />
+                  <e p="QueryObjectTypeExtension.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Infrastructure" t="Include">
+                <e p="Repositories" t="Include">
+                  <e p="TenantRepository.cs" t="Include" />
+                </e>
+                <e p="Settings" t="Include">
+                  <e p="MultiTenantSettings.cs" t="Include" />
+                </e>
+                <e p="TenantIdentification" t="Include">
+                  <e p="CustomMultiTenantStore.cs" t="Include" />
+                  <e p="MultiTenantSchemaIdentifier.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Initium.Api.MultiTenant.csproj" t="IncludeRecursive" />
+              <e p="obj" t="ExcludeRecursive">
+                <e p="Debug" t="Include">
+                  <e p="netcoreapp3.1" t="Include">
+                    <e p="Initium.Api.MultiTenant.AssemblyInfo.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="Queries" t="Include">
+                <e p="Entities" t="Include">
+                  <e p="ReadOnlyTenant.cs" t="Include" />
+                </e>
+              </e>
+              <e p="ServiceCollectionExtensions.cs" t="Include" />
+            </e>
+            <e p="Initium.Api.MultiTenant.SqlServer" t="IncludeRecursive">
+              <e p="bin" t="ExcludeRecursive" />
+              <e p="Database" t="Include">
+                <e p="MultiTenantDbMigrationEngine.cs" t="Include" />
+                <e p="Scripts" t="Include">
+                  <e p="20201216-2031_InitTenant.sql" t="Include" />
+                </e>
+              </e>
+              <e p="EntityTypeConfigurations" t="Include">
+                <e p="ReadOnlyTenantEntityTypeConfiguration.cs" t="Include" />
+                <e p="TenantEntityTypeConfiguration.cs" t="Include" />
+              </e>
+              <e p="Initium.Api.MultiTenant.SqlServer.csproj" t="IncludeRecursive" />
+              <e p="MultiTenantIEntityTypeConfigurationProvider.cs" t="Include" />
+              <e p="MultiTenantOptionsBuilderExtensions.cs" t="Include" />
+              <e p="obj" t="ExcludeRecursive">
+                <e p="Debug" t="Include">
+                  <e p="netcoreapp3.1" t="Include">
+                    <e p="Initium.Api.MultiTenant.SqlServer.AssemblyInfo.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
+      </e>
+    </e>
+  </component>
+</project>

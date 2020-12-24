@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FairyBread" Version="2.0.0-preview.1" />
+      <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="8.6.3" />
+      <PackageReference Include="HotChocolate.AspNetCore" Version="11.0.4" />
+      <PackageReference Include="HotChocolate.Types.OffsetPagination" Version="11.0.4" />
+      <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Api\Initium.Api.MultiTenant\Initium.Api.MultiTenant.csproj" />
+      <ProjectReference Include="..\MultiTenant\Initium.MultiTenant.SqlServer\Initium.MultiTenant.SqlServer.csproj" />
+      <ProjectReference Include="..\TenantAdmin\Initium.MultiTenant\Initium.MultiTenant.csproj" />
+    </ItemGroup>
+
+
+</Project>
