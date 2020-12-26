@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\andre\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\andre\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Initium.-1802509940.00" t="ExcludeRecursive" />
-    <e p="C:\Users\andre\Documents\code\project-initium\initium-framework" t="IncludeFlat">
+    <e p="C:\Users\andre\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Initium.2057644546.00" t="ExcludeRecursive" />
+    <e p="C:\Users\andre\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\andre\Documents\Github\project-initium\initium-framework" t="IncludeFlat">
       <e p="Examples" t="Include" />
       <e p="Initium.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
@@ -59,7 +60,6 @@
                 </e>
                 <e p="Commands" t="Include">
                   <e p="UserAggregate" t="Include">
-                    <e p="AddUserFromProviderCommand.cs" t="Include" />
                     <e p="ChangePasswordCommand.cs" t="Include" />
                     <e p="CreateInitialUserCommand.cs" t="Include" />
                     <e p="CreateUserCommand.cs" t="Include" />
@@ -69,7 +69,6 @@
                 </e>
                 <e p="CommandValidators" t="Include">
                   <e p="UserAggregate" t="Include">
-                    <e p="AddUserFromProviderCommandValidator.cs" t="Include" />
                     <e p="ChangePasswordCommandValidator.cs" t="Include" />
                     <e p="CreateInitialUserCommandValidator.cs" t="Include" />
                     <e p="CreateUserCommandValidator.cs" t="Include" />
@@ -79,12 +78,25 @@
                 </e>
               </e>
               <e p="Extensions" t="Include">
-                <e p="IRequestExecutorBuilderExtensions.cs" t="Include" />
-                <e p="IServiceCollectionExtensions.cs" t="Include" />
+                <e p="RequestExecutorBuilderExtensions.cs" t="Include" />
+                <e p="ServiceCollectionExtensions.cs" t="Include" />
               </e>
               <e p="GraphQL" t="Include">
+                <e p="EntityTypes" t="Include">
+                  <e p="UserType.cs" t="Include" />
+                </e>
+                <e p="InputTypes" t="Include">
+                  <e p="ChangePasswordInput.cs" t="Include" />
+                  <e p="CreateInitialUserInput.cs" t="Include" />
+                  <e p="CreateUserInput.cs" t="Include" />
+                  <e p="DisableUserInput.cs" t="Include" />
+                  <e p="EnableUserInput.cs" t="Include" />
+                </e>
                 <e p="MutationObjectTypeExtension.cs" t="Include" />
                 <e p="QueryObjectTypeExtension.cs" t="Include" />
+                <e p="QueryTypes" t="Include">
+                  <e p="User.cs" t="Include" />
+                </e>
               </e>
               <e p="Infrastructure" t="Include">
                 <e p="EntityTypeConfigurations" t="Include">
@@ -98,6 +110,11 @@
                   <e p="netstandard2.1" t="Include">
                     <e p="Initium.Api.Authentication.Core.AssemblyInfo.cs" t="Include" />
                   </e>
+                </e>
+              </e>
+              <e p="Queries" t="Include">
+                <e p="Entities" t="Include">
+                  <e p="ReadOnlyUser.cs" t="Include" />
                 </e>
               </e>
             </e>

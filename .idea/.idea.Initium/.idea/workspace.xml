@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0904af54-1945-4bec-8534-eaf0d67b0176" name="Default Changelist" comment="" />
+    <list default="true" id="0904af54-1945-4bec-8534-eaf0d67b0176" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Initium/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Initium/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Initium/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Initium/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/AggregateModels/UserAggregate/IUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/AggregateModels/UserAggregate/IUser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/AggregateModels/UserAggregate/IUserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/AggregateModels/UserAggregate/IUserRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/AggregateModels/UserAggregate/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/AggregateModels/UserAggregate/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/CommandHandlers/UserAggregate/ChangePasswordCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/CommandHandlers/UserAggregate/ChangePasswordCommandHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/CommandHandlers/UserAggregate/CreateInitialUserCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/CommandHandlers/UserAggregate/CreateInitialUserCommandHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/CommandHandlers/UserAggregate/CreateUserCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/CommandHandlers/UserAggregate/CreateUserCommandHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/CommandHandlers/UserAggregate/DisableUserCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/CommandHandlers/UserAggregate/DisableUserCommandHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/CommandHandlers/UserAggregate/EnableUserCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/CommandHandlers/UserAggregate/EnableUserCommandHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/CommandValidators/UserAggregate/AddUserFromProviderCommandValidator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/CommandValidators/UserAggregate/ChangePasswordCommandValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/CommandValidators/UserAggregate/ChangePasswordCommandValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/CommandValidators/UserAggregate/CreateInitialUserCommandValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/CommandValidators/UserAggregate/CreateInitialUserCommandValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/CommandValidators/UserAggregate/CreateUserCommandValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/CommandValidators/UserAggregate/CreateUserCommandValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/CommandValidators/UserAggregate/DisableUserCommandValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/CommandValidators/UserAggregate/DisableUserCommandValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/CommandValidators/UserAggregate/EnableUserCommandValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/CommandValidators/UserAggregate/EnableUserCommandValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/Commands/UserAggregate/AddUserFromProviderCommand.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/Commands/UserAggregate/ChangePasswordCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/Commands/UserAggregate/ChangePasswordCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/Commands/UserAggregate/CreateInitialUserCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/Commands/UserAggregate/CreateInitialUserCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/Commands/UserAggregate/CreateUserCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/Commands/UserAggregate/CreateUserCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/Commands/UserAggregate/DisableUserCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/Commands/UserAggregate/DisableUserCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/Commands/UserAggregate/EnableUserCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/Commands/UserAggregate/EnableUserCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Extensions/IRequestExecutorBuilderExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Extensions/RequestExecutorBuilderExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Extensions/IServiceCollectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Extensions/ServiceCollectionExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/GraphQL/MutationObjectTypeExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/GraphQL/MutationObjectTypeExtension.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/GraphQL/QueryObjectTypeExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/GraphQL/QueryObjectTypeExtension.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Infrastructure/EntityTypeConfigurations/UserEntityTypeConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Infrastructure/EntityTypeConfigurations/UserEntityTypeConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Infrastructure/IIdentityProviderClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Infrastructure/IIdentityProviderClient.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +38,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F81F4ED3-5D2A-43DA-B9A7-54E5E9F9C1A1/9C/ResolverObjectFieldDescriptorExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F81F4ED3-5D2A-43DA-B9A7-54E5E9F9C1A1/72/0d9ab7fb/IObjectFieldDescriptor.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -20,9 +53,10 @@
       <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Initium.Api.Authentication.Core.csproj" />
       <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.AzureActiveDirectoryB2C/Initium.Api.Authentication.AzureActiveDirectoryB2C.csproj" />
       <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Database/AuthenticationDbMigrationEngine.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Extensions/IServiceCollectionExtensions.cs" />
       <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/AggregateModels/UserAggregate/IUser.cs" />
-      <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/AggregateModels/UserAggregate/IUserRepository.cs" />
       <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/AggregateModels/UserAggregate/User.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/AggregateModels/UserAggregate/IUserRepository.cs" />
       <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/CommandHandlers/UserAggregate/ChangePasswordCommandHandler.cs" />
       <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/CommandHandlers/UserAggregate/CreateInitialUserCommandHandler.cs" />
       <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/CommandHandlers/UserAggregate/CreateUserCommandHandler.cs" />
@@ -34,13 +68,33 @@
       <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/Commands/UserAggregate/CreateUserCommand.cs" />
       <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/Commands/UserAggregate/DisableUserCommand.cs" />
       <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/Commands/UserAggregate/EnableUserCommand.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/CommandValidators/UserAggregate/AddUserFromProviderCommandValidator.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/CommandValidators/UserAggregate/ChangePasswordCommandValidator.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/CommandValidators/UserAggregate/CreateInitialUserCommandValidator.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/CommandValidators/UserAggregate/CreateUserCommandValidator.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/CommandValidators/UserAggregate/DisableUserCommandValidator.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Domain/CommandValidators/UserAggregate/EnableUserCommandValidator.cs" />
       <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Extensions/IRequestExecutorBuilderExtensions.cs" />
-      <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Extensions/IServiceCollectionExtensions.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Extensions/RequestExecutorBuilderExtensions.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Extensions/ServiceCollectionExtensions.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Queries/Entities/ReadOnlyUser.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/GraphQL/QueryTypes/User.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/GraphQL/EntityTypes/UserType.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/GraphQL/InputTypes/CreateInitialUserInput.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/GraphQL/InputTypes/CreateUserInput.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/GraphQL/InputTypes/ChangePasswordInput.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/GraphQL/InputTypes/DisableUserInput.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/GraphQL/InputTypes/EnableUserInput.cs" />
       <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/GraphQL/MutationObjectTypeExtension.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Infrastructure/IIdentityProviderClient.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Infrastructure/EntityTypeConfigurations/UserEntityTypeConfiguration.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/GraphQL/QueryObjectTypeExtension.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1m6EyIi72S314cOY5IUA3cIdpAj" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -66,13 +120,14 @@
       <option name="presentableId" value="Default" />
       <updated>1608805896897</updated>
       <workItem from="1608805900489" duration="2211000" />
+      <workItem from="1608922972505" duration="7657000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -84,6 +139,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

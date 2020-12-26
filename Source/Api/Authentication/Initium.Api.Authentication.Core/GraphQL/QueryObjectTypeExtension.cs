@@ -1,4 +1,7 @@
 ﻿using HotChocolate.Types;
+using Initium.Api.Authentication.Core.Infrastructure;
+using Initium.Api.Core.Database;
+using Initium.Api.Core.GraphQL;
 
 namespace Initium.Api.Authentication.Core.GraphQL
 {
@@ -9,10 +12,14 @@ namespace Initium.Api.Authentication.Core.GraphQL
             descriptor.Name(QueryType.TypeName);
             descriptor
                 .Field("users")
-                .Resolver((context, token) =>
+                .Resolver((ctx, token) =>
                 {
-                                        
+                    var context = ctx.Service<GenericDataContext>();
+                    var identityProviderClient = ctx.Service<IIdentityProviderClient>();
+                    
+                    ctx.
                     // query external
+                    identityProviderClient.Search(ctx.GetSelections())
                     
                     // get for database
                 })

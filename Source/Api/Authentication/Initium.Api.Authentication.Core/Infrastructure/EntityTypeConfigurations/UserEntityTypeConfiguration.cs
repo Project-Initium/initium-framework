@@ -1,4 +1,5 @@
 ﻿using Initium.Api.Authentication.Core.Domain.AggregateModels.UserAggregate;
+using Initium.Api.Core.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

@@ -7,12 +7,6 @@ namespace Initium.Api.Authentication.Core.Domain.AggregateModels.UserAggregate
 {
     public interface IUser : IAggregateRoot, IEntity
     {
-        public string EmailAddress { get; }
-        
-        public string FirstName { get; }
-        
-        public string LastName { get; }
-        
         string ExternalUserRef { get; }
     }
 }

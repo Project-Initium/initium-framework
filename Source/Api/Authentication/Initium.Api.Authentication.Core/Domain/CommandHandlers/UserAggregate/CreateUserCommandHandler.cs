@@ -1,4 +1,7 @@
-﻿using System.Threading;
+﻿// Copyright (c) Project Initium. All rights reserved.
+// Licensed under the MIT License. See LICENSE file in the project root for full license information.
+
+using System.Threading;
 using System.Threading.Tasks;
 using Initium.Api.Authentication.Core.Domain.AggregateModels.UserAggregate;
 using Initium.Api.Authentication.Core.Domain.Commands.UserAggregate;
@@ -27,12 +30,12 @@ namespace Initium.Api.Authentication.Core.Domain.CommandHandlers.UserAggregate
         {
             var result = await this.Process(request, cancellationToken);
             var dbResult = await this._userRepository.UnitOfWork.SaveEntitiesAsync(cancellationToken);
-            
+
             if (dbResult)
             {
                 return result;
             }
-            
+
             this._logger.LogDebug("Failed saving changes.");
             return ResultWithError.Fail(new ErrorData(
                 ErrorCodes.SavingChanges, "Failed To Save Database"));
@@ -40,14 +43,14 @@ namespace Initium.Api.Authentication.Core.Domain.CommandHandlers.UserAggregate
 
         private async Task<ResultWithError<ErrorData>> Process(CreateUserCommand request, CancellationToken cancellationToken)
         {
-            var result = await this._identityProvider.CreateUser(request.UserId.ToString(), request.EmailAddress);
+            var result = await this._identityProvider.CreateUser(request.UserId.ToString(), request.EmailAddress, cancellationToken);
             if (result.IsFailure)
             {
                 return ResultWithError.Fail<ErrorData>(new ErrorData(""));
             }
 
-            this._userRepository.Add(new User(request.UserId, request.EmailAddress, request.FirstName, request.LastName, result.Value.ExternalRef));
-         
+            this._userRepository.Add(new User(request.UserId, result.Value.ExternalRef));
+
             return ResultWithError.Ok<ErrorData>();
         }
     }
