@@ -9,8 +9,8 @@ namespace Initium.Api.Authentication.Core.Queries.Entities
         {
         }
 
-        public Guid Id { get; }
+        public Guid Id { get; private set; }
 
-        public string ExternalRef { get; }
+        public string ExternalRef { get; private set; }
     }
 }

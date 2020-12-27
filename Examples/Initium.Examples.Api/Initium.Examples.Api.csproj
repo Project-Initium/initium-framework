@@ -14,9 +14,11 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Api\Initium.Api.MultiTenant\Initium.Api.MultiTenant.csproj" />
-      <ProjectReference Include="..\MultiTenant\Initium.MultiTenant.SqlServer\Initium.MultiTenant.SqlServer.csproj" />
-      <ProjectReference Include="..\TenantAdmin\Initium.MultiTenant\Initium.MultiTenant.csproj" />
+      <ProjectReference Include="..\..\Source\Api\Authentication\Initium.Api.Authentication.Core.SqlServer\Initium.Api.Authentication.Core.SqlServer.csproj" />
+      <ProjectReference Include="..\..\Source\Api\Authentication\Initium.Api.Authentication.Core\Initium.Api.Authentication.Core.csproj" />
+      <ProjectReference Include="..\..\Source\Api\Initium.Api.Core\Initium.Api.Core.csproj" />
+      <ProjectReference Include="..\..\Source\Api\MultiTenant\Initium.Api.MultiTenant.SqlServer\Initium.Api.MultiTenant.SqlServer.csproj" />
+      <ProjectReference Include="..\..\Source\Api\MultiTenant\Initium.Api.MultiTenant\Initium.Api.MultiTenant.csproj" />
     </ItemGroup>
 
 

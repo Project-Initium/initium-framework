@@ -15,16 +15,20 @@ namespace Initium.Api.MultiTenant.Domain.CommandHandlers.TenantAggregate
 {
     public class EnableTenantCommandHandler : IRequestHandler<EnableTenantCommand, ResultWithError<ErrorData>>
     {
-        private readonly ITenantRepository _tenantRepository;
         private readonly ILogger _logger;
+        private readonly ITenantRepository _tenantRepository;
 
-        public EnableTenantCommandHandler(ITenantRepository tenantRepository, ILogger<EnableTenantCommandHandler> logger)
+        public EnableTenantCommandHandler(
+            ITenantRepository tenantRepository,
+            ILogger<EnableTenantCommandHandler> logger)
         {
             this._tenantRepository = tenantRepository;
             this._logger = logger;
         }
 
-        public async Task<ResultWithError<ErrorData>> Handle(EnableTenantCommand request, CancellationToken cancellationToken)
+        public async Task<ResultWithError<ErrorData>> Handle(
+            EnableTenantCommand request,
+            CancellationToken cancellationToken)
         {
             var result = await this.Process(request, cancellationToken);
             var dbResult = await this._tenantRepository.UnitOfWork.SaveEntitiesAsync(cancellationToken);
@@ -39,7 +43,9 @@ namespace Initium.Api.MultiTenant.Domain.CommandHandlers.TenantAggregate
                 ErrorCodes.SavingChanges, "Failed To Save Database"));
         }
 
-        private async Task<ResultWithError<ErrorData>> Process(EnableTenantCommand request, CancellationToken cancellationToken)
+        private async Task<ResultWithError<ErrorData>> Process(
+            EnableTenantCommand request,
+            CancellationToken cancellationToken)
         {
             var tenantMaybe = await this._tenantRepository.Find(request.TenantId, cancellationToken);
             if (tenantMaybe.HasNoValue)

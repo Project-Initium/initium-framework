@@ -4,7 +4,7 @@ using Initium.Api.Core.Database;
 using Initium.Api.Core.Settings;
 using Microsoft.Extensions.Options;
 
-namespace Initium.Api.Authentication.Core.Database
+namespace Initium.Api.Authentication.Core.SqlServer.Database
 {
     public class AuthenticationDbMigrationEngine : IDbMigrationEngine
     {

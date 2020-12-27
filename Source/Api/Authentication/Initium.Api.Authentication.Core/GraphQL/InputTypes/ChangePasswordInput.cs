@@ -10,7 +10,7 @@ namespace Initium.Api.Authentication.Core.GraphQL.InputTypes
     {
         public Guid Id { get; set; }
 
-        public string NewPassword { get; }
+        public string NewPassword { get; set; }
 
         public class Validator : AbstractValidator<ChangePasswordInput>
         {

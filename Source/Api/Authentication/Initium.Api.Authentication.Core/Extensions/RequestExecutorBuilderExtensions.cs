@@ -3,15 +3,17 @@
 
 using HotChocolate.Execution.Configuration;
 using Initium.Api.Authentication.Core.GraphQL;
+using Initium.Api.Authentication.Core.GraphQL.EntityTypes;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Initium.Api.Authentication.Core.Extensions
 {
     public static class RequestExecutorBuilderExtensions
     {
-        public static IRequestExecutorBuilder RegisterMultiTenant(this IRequestExecutorBuilder builder)
+        public static IRequestExecutorBuilder RegisterAuthentication(this IRequestExecutorBuilder builder)
         {
             return builder
+                .AddType<UserType>()
                 .AddType<QueryObjectTypeExtension>()
                 .AddType<MutationObjectTypeExtension>();
         }

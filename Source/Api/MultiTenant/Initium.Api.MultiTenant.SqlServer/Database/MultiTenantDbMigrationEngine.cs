@@ -18,7 +18,7 @@ namespace Initium.Api.MultiTenant.SqlServer.Database
         public bool PerformMigration(IDictionary<string, string> variables)
         {
             var connectionString = this._dataSettings.PrimaryConnectionString;
-            
+
             var upgrader =
                 DeployChanges.To
                     .SqlDatabase(connectionString)
@@ -27,7 +27,7 @@ namespace Initium.Api.MultiTenant.SqlServer.Database
                     .LogToConsole()
                     .WithVariables(variables??new Dictionary<string, string>())
                     .Build();
-            
+
             var result = upgrader.PerformUpgrade();
             return result.Successful;
         }

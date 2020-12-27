@@ -1,12 +1,12 @@
 using System;
-using FairyBread;
 using HotChocolate.Types.Pagination;
-using Initium.Api.MultiTenant;
-using Initium.Core.Database;
-using Initium.Core.GraphQL;
-using Initium.Core.Settings;
-using Initium.MultiTenant.Extensions;
-using Initium.MultiTenant.SqlServer;
+using Initium.Api.Authentication.Core.Extensions;
+using Initium.Api.Authentication.Core.SqlServer;
+using Initium.Api.Core.Database;
+using Initium.Api.Core.GraphQL;
+using Initium.Api.Core.Settings;
+using Initium.Api.MultiTenant.Extensions;
+using Initium.Api.MultiTenant.SqlServer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -17,7 +17,7 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
 
-namespace Initium.Portal.Api
+namespace Initium.Examples.Api
 {
     public class Startup
     {
@@ -47,8 +47,12 @@ namespace Initium.Portal.Api
         {
             services.Configure<DataSettings>(this.Configuration.GetSection("Data"));
 
-            services.AddMultiTenantForApi(this.Configuration)
+            services.AddInitiumMultiTenant(this.Configuration)
+                 .WithSqlServerStore();
+
+            services.AddInitiumAuthentication(this.Configuration)
                 .WithSqlServerStore();
+                
 
             services.AddEntityFrameworkSqlServer();
 
@@ -62,16 +66,17 @@ namespace Initium.Portal.Api
             });
 
             services.AddGraphQLServer()
-                .UseField<CustomInputValidationMiddleware>()
-                .AddFairyBread(options =>
-                {
-                    options.AssembliesToScanForValidators = new[] {typeof(CreateTenantInputValidator).Assembly};
-                })
-                .AddErrorFilter<ValidationErrorFilter>()
+                //.UseField<CustomInputValidationMiddleware>()
+                // .AddFairyBread(options =>
+                // {
+                //     options.AssembliesToScanForValidators = new[] {typeof(CreateTenantInputValidator).Assembly};
+                // })
+                //.AddErrorFilter<ValidationErrorFilter>()
                 .BindRuntimeType<Guid, GuidType>()
                 .AddMutationType<MutationType>()
                 .AddQueryType<QueryType>()
                 .RegisterMultiTenant()
+                .RegisterAuthentication()
                 .AddFiltering()
                 .AddProjections()
                 .AddSorting()
@@ -82,7 +87,7 @@ namespace Initium.Portal.Api
                     MaxPageSize = 100
                 });
 
-            services.TryAddScoped<ISchemaIdentifier, ISchemaIdentifier>();
+            services.TryAddScoped<ISchemaIdentifier, CoreSchemaIdentifier>();
 
             services.AddHostedService<StartupService>();
         }

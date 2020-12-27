@@ -19,7 +19,10 @@ namespace Initium.Api.Authentication.Core.Domain.CommandHandlers.UserAggregate
         private readonly ILogger _logger;
         private readonly IIdentityProviderClient _identityProvider;
 
-        public CreateUserCommandHandler(IUserRepository userRepository, ILogger<CreateUserCommandHandler> logger, IIdentityProviderClient identityProvider)
+        public CreateUserCommandHandler(
+            IUserRepository userRepository,
+            ILogger<CreateUserCommandHandler> logger,
+            IIdentityProviderClient identityProvider)
         {
             this._userRepository = userRepository;
             this._logger = logger;

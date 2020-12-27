@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="Database\Scripts\20201217-2214_InitUser.sql" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Initium.Api.Core\Initium.Api.Core.csproj" />
+      <ProjectReference Include="..\Initium.Api.Authentication.Core\Initium.Api.Authentication.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="dbup-core" Version="4.5.0" />
+      <PackageReference Include="dbup-sqlserver" Version="4.5.0" />
+    </ItemGroup>
+
+</Project>

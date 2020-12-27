@@ -19,18 +19,20 @@ namespace Initium.Api.MultiTenant.Domain.CommandHandlers.TenantAggregate
 {
     public class UpdateTenantCommandHandler : IRequestHandler<UpdateTenantCommand, ResultWithError<ErrorData>>
     {
-        private readonly ITenantRepository _tenantRepository;
-        private readonly ILogger _logger;
         private readonly GenericDataContext _context;
+        private readonly ILogger _logger;
+        private readonly ITenantRepository _tenantRepository;
 
-        public UpdateTenantCommandHandler(ITenantRepository tenantRepository, ILogger<UpdateTenantCommandHandler> logger, GenericDataContext context)
+        public UpdateTenantCommandHandler(ITenantRepository tenantRepository,
+            ILogger<UpdateTenantCommandHandler> logger, GenericDataContext context)
         {
             this._tenantRepository = tenantRepository;
             this._logger = logger;
             this._context = context;
         }
 
-        public async Task<ResultWithError<ErrorData>> Handle(UpdateTenantCommand request, CancellationToken cancellationToken)
+        public async Task<ResultWithError<ErrorData>> Handle(UpdateTenantCommand request,
+            CancellationToken cancellationToken)
         {
             var result = await this.Process(request, cancellationToken);
             var dbResult = await this._tenantRepository.UnitOfWork.SaveEntitiesAsync(cancellationToken);
@@ -45,7 +47,8 @@ namespace Initium.Api.MultiTenant.Domain.CommandHandlers.TenantAggregate
                 ErrorCodes.SavingChanges, "Failed To Save Database"));
         }
 
-        private async Task<ResultWithError<ErrorData>> Process(UpdateTenantCommand request, CancellationToken cancellationToken)
+        private async Task<ResultWithError<ErrorData>> Process(UpdateTenantCommand request,
+            CancellationToken cancellationToken)
         {
             var tenantMaybe = await this._tenantRepository.Find(request.TenantId, cancellationToken);
             if (tenantMaybe.HasNoValue)
@@ -58,7 +61,8 @@ namespace Initium.Api.MultiTenant.Domain.CommandHandlers.TenantAggregate
 
             if (!string.Equals(tenant.Identifier, request.Identifier, StringComparison.InvariantCultureIgnoreCase))
             {
-                var isAvailable = await this._context.Set<ReadOnlyTenant>().CountAsync(x=> x.Name == request.Name, cancellationToken) == 0;
+                var isAvailable = await this._context.Set<ReadOnlyTenant>()
+                    .CountAsync(x => x.Name == request.Name, cancellationToken) == 0;
                 if (!isAvailable)
                 {
                     this._logger.LogDebug("Failed presence check.");

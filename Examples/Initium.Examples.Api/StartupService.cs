@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Initium.Core.Database;
+using Initium.Api.Core.Database;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace Initium.Portal.Api
+namespace Initium.Examples.Api
 {
     public class StartupService : IHostedService
     {

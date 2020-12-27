@@ -3,7 +3,7 @@ using Initium.Api.Core.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Initium.Api.Authentication.Core.Infrastructure.EntityTypeConfigurations
+namespace Initium.Api.Authentication.Core.SqlServer.EntityTypeConfigurations
 {
     public class UserEntityTypeConfiguration : IEntityTypeConfiguration<User>
     {

@@ -4,6 +4,7 @@
 using FairyBread;
 using HotChocolate.Types;
 using Initium.Api.Authentication.Core.Domain.Commands.UserAggregate;
+using Initium.Api.Authentication.Core.GraphQL.EntityTypes;
 using Initium.Api.Authentication.Core.GraphQL.InputTypes;
 using Initium.Api.Authentication.Core.GraphQL.QueryTypes;
 using Initium.Api.Core.Extensions;

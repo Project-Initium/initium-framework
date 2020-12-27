@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Initium.Api.MultiTenant.Extensions
 {
-    public static class IRequestExecutorBuilderExtensions
+    public static class RequestExecutorBuilderExtensions
     {
         public static IRequestExecutorBuilder RegisterMultiTenant(this IRequestExecutorBuilder builder)
         {
