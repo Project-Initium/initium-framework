@@ -2,18 +2,19 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\andre\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\andre\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Initium.-1802509940.00" t="ExcludeRecursive" />
-    <e p="C:\Users\andre\Documents\code\project-initium\initium-framework" t="IncludeFlat">
+    <e p="C:\Users\andre\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Initium.2057644546.00" t="ExcludeRecursive" />
+    <e p="C:\Users\andre\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\andre\Documents\Github\project-initium\initium-framework" t="IncludeFlat">
       <e p="Examples" t="Include">
-        <e p="Initium.Api" t="IncludeRecursive">
+        <e p="Initium.Examples.Api" t="IncludeRecursive">
           <e p="appsettings.Development.json" t="Include" />
           <e p="appsettings.json" t="Include" />
           <e p="bin" t="ExcludeRecursive" />
-          <e p="Initium.Api.csproj" t="IncludeRecursive" />
+          <e p="Initium.Examples.Api.csproj" t="IncludeRecursive" />
           <e p="obj" t="ExcludeRecursive">
             <e p="Debug" t="Include">
               <e p="netcoreapp3.1" t="Include">
-                <e p="Initium.Api.AssemblyInfo.cs" t="Include" />
+                <e p="Initium.Examples.Api.AssemblyInfo.cs" t="Include" />
               </e>
             </e>
           </e>
@@ -154,6 +155,31 @@
                 <e p="Debug" t="Include">
                   <e p="netstandard2.1" t="Include">
                     <e p="Initium.Api.Authentication.Core.SqlServer.AssemblyInfo.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="Authorization" t="Include">
+            <e p="Initium.Api.Authorization" t="IncludeRecursive">
+              <e p="bin" t="ExcludeRecursive" />
+              <e p="Constants" t="Include" />
+              <e p="DependencyInjection" t="Include" />
+              <e p="Domain" t="Include">
+                <e p="AggregateModels" t="Include">
+                  <e p="RoleAggregate" t="Include">
+                    <e p="IRole.cs" t="Include" />
+                    <e p="IRoleRepository.cs" t="Include" />
+                    <e p="Role.cs" t="Include" />
+                    <e p="RoleResource.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="Initium.Api.Authorization.csproj" t="IncludeRecursive" />
+              <e p="obj" t="ExcludeRecursive">
+                <e p="Debug" t="Include">
+                  <e p="netstandard2.1" t="Include">
+                    <e p="Initium.Api.Authorization.AssemblyInfo.cs" t="Include" />
                   </e>
                 </e>
               </e>
