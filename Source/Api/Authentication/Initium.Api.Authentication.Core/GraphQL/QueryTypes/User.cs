@@ -7,6 +7,10 @@ namespace Initium.Api.Authentication.Core.GraphQL.QueryTypes
 {
     public class User
     {
+        private User()
+        {
+            
+        }
         public User(Guid id, string firstName, string lastName, string emailAddress)
         {
             this.Id = id;
@@ -15,12 +19,12 @@ namespace Initium.Api.Authentication.Core.GraphQL.QueryTypes
             this.EmailAddress = emailAddress;
         }
 
-        public Guid Id { get; }
+        public Guid Id { get; private set; }
 
-        private string FirstName { get; }
+        public string FirstName { get; private set; }
 
-        private string LastName { get; }
+        public string LastName { get; private set; }
 
-        private string EmailAddress { get; }
+        public string EmailAddress { get; private set; }
     }
 }

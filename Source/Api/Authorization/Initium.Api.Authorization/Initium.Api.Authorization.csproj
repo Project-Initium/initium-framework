@@ -6,11 +6,18 @@
 
     <ItemGroup>
       <Folder Include="Constants" />
-      <Folder Include="DependencyInjection" />
+      <Folder Include="Domain\CommandHandlers\UserAggregate" />
+      <Folder Include="Domain\CommandResults\UserAggregate" />
+      <Folder Include="Domain\Commands\UserAggregate" />
+      <Folder Include="Domain\CommandValidators\UserAggregate" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\..\Initium.Api.Core\Initium.Api.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="NodaTime" Version="3.0.3" />
     </ItemGroup>
 
 </Project>

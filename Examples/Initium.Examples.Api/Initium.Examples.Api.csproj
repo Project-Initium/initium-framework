@@ -16,6 +16,8 @@
     <ItemGroup>
       <ProjectReference Include="..\..\Source\Api\Authentication\Initium.Api.Authentication.Core.SqlServer\Initium.Api.Authentication.Core.SqlServer.csproj" />
       <ProjectReference Include="..\..\Source\Api\Authentication\Initium.Api.Authentication.Core\Initium.Api.Authentication.Core.csproj" />
+      <ProjectReference Include="..\..\Source\Api\Authorization\Initium.Api.Authorization.SqlServer\Initium.Api.Authorization.SqlServer.csproj" />
+      <ProjectReference Include="..\..\Source\Api\Authorization\Initium.Api.Authorization\Initium.Api.Authorization.csproj" />
       <ProjectReference Include="..\..\Source\Api\Initium.Api.Core\Initium.Api.Core.csproj" />
       <ProjectReference Include="..\..\Source\Api\MultiTenant\Initium.Api.MultiTenant.SqlServer\Initium.Api.MultiTenant.SqlServer.csproj" />
       <ProjectReference Include="..\..\Source\Api\MultiTenant\Initium.Api.MultiTenant\Initium.Api.MultiTenant.csproj" />

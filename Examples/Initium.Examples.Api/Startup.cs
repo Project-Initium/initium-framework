@@ -2,6 +2,8 @@ using System;
 using HotChocolate.Types.Pagination;
 using Initium.Api.Authentication.Core.Extensions;
 using Initium.Api.Authentication.Core.SqlServer;
+using Initium.Api.Authorization.Extensions;
+using Initium.Api.Authorization.SqlServer;
 using Initium.Api.Core.Database;
 using Initium.Api.Core.GraphQL;
 using Initium.Api.Core.Settings;
@@ -47,10 +49,13 @@ namespace Initium.Examples.Api
         {
             services.Configure<DataSettings>(this.Configuration.GetSection("Data"));
 
-            services.AddInitiumMultiTenant(this.Configuration)
-                 .WithSqlServerStore();
+            //services.AddInitiumMultiTenant(this.Configuration)
+            //     .WithSqlServerStore();
 
             services.AddInitiumAuthentication(this.Configuration)
+                .WithSqlServerStore();
+
+            services.AddInitiumAuthorization(this.Configuration)
                 .WithSqlServerStore();
                 
 
@@ -75,7 +80,7 @@ namespace Initium.Examples.Api
                 .BindRuntimeType<Guid, GuidType>()
                 .AddMutationType<MutationType>()
                 .AddQueryType<QueryType>()
-                .RegisterMultiTenant()
+                //.RegisterMultiTenant()
                 .RegisterAuthentication()
                 .AddFiltering()
                 .AddProjections()

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Authentication\Initium.Api.Authentication.Core\Initium.Api.Authentication.Core.csproj" />
+      <ProjectReference Include="..\Initium.Api.Authorization\Initium.Api.Authorization.csproj" />
+    </ItemGroup>
+
+</Project>

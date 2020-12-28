@@ -6,6 +6,7 @@ using Initium.Api.Authentication.Core.GraphQL.QueryTypes;
 using Initium.Api.Authentication.Core.Infrastructure;
 using Initium.Api.Core.Database;
 using Initium.Api.Core.GraphQL;
+using Microsoft.EntityFrameworkCore;
 
 namespace Initium.Api.Authentication.Core.GraphQL
 {
@@ -23,7 +24,9 @@ namespace Initium.Api.Authentication.Core.GraphQL
                 .UseSorting()
                 .Resolver((ctx, token) =>
                 {
-                    // var context = ctx.Service<GenericDataContext>();
+                    var context = ctx.Service<GenericDataContext>();
+                    var data = context.Set<Domain.AggregateModels.UserAggregate.User>().ToListAsync(token);
+                    
                     // var identityProviderClient = ctx.Service<IIdentityProviderClient>();
                     //
                     // ctx.
