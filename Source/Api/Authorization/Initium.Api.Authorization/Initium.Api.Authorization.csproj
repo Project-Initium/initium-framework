@@ -2,10 +2,11 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>9</LangVersion>
+        <Nullable>enable</Nullable>
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Constants" />
       <Folder Include="Domain\CommandHandlers\UserAggregate" />
       <Folder Include="Domain\CommandResults\UserAggregate" />
       <Folder Include="Domain\Commands\UserAggregate" />
@@ -13,6 +14,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\Authentication\Initium.Api.Authentication.Core\Initium.Api.Authentication.Core.csproj" />
       <ProjectReference Include="..\..\Initium.Api.Core\Initium.Api.Core.csproj" />
     </ItemGroup>
 

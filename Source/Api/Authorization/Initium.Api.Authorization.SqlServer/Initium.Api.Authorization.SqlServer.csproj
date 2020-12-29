@@ -9,4 +9,9 @@
       <ProjectReference Include="..\Initium.Api.Authorization\Initium.Api.Authorization.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="Database\Scripts\20201228-0019_InitAuthorization.sql" />
+      <EmbeddedResource Include="Database\Scripts\20201228-0019_InitAuthorization.sql" />
+    </ItemGroup>
+
 </Project>

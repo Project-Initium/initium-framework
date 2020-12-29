@@ -4,19 +4,19 @@
 using System;
 using FluentValidation;
 using Initium.Api.Authorization.Domain.Commands.RoleAggregate;
-using Initium.Portal.Core.Contracts.Domain;
+using Initium.Api.Core.Contracts.Domain;
 
-namespace Initium.Portal.Domain.CommandValidators.RoleAggregate
+namespace Initium.Api.Authorization.Domain.CommandValidators.RoleAggregate
 {
     public class UpdateRoleCommandValidator : AbstractValidator<UpdateRoleCommand>
     {
         public UpdateRoleCommandValidator()
         {
             this.RuleFor(x => x.Name)
-                .Cascade(CascadeMode.Stop)
+                .Cascade(CascadeMode.StopOnFirstFailure)
                 .NotEmpty().WithErrorCode(ValidationCodes.FieldIsRequired);
             this.RuleFor(x => x.RoleId)
-                .Cascade(CascadeMode.Stop)
+                .Cascade(CascadeMode.StopOnFirstFailure)
                 .NotEqual(Guid.Empty).WithErrorCode(ValidationCodes.FieldIsRequired);
         }
     }

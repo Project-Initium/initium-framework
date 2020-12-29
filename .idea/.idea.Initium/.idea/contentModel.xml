@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\andre\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\andre\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Initium.-1802509940.00" t="ExcludeRecursive" />
-    <e p="C:\Users\andre\Documents\code\project-initium\initium-framework" t="IncludeFlat">
+    <e p="C:\Users\andre\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Initium.2057644546.00" t="ExcludeRecursive" />
+    <e p="C:\Users\andre\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\andre\Documents\Github\project-initium\initium-framework" t="IncludeFlat">
+      <e p="_" t="Include" />
+      <e p="docker-compose.yml" t="Include" />
       <e p="Examples" t="Include">
         <e p="Initium.Examples.Api" t="IncludeRecursive">
           <e p="appsettings.Development.json" t="Include" />
@@ -162,7 +165,9 @@
           <e p="Authorization" t="Include">
             <e p="Initium.Api.Authorization" t="IncludeRecursive">
               <e p="bin" t="ExcludeRecursive" />
-              <e p="Constants" t="Include" />
+              <e p="Constants" t="Include">
+                <e p="AuthorizationErrorCodes.cs" t="Include" />
+              </e>
               <e p="DependencyInjection" t="Include">
                 <e p="AuthorizationBuilder.cs" t="Include" />
               </e>
@@ -213,7 +218,25 @@
                 </e>
               </e>
               <e p="Extensions" t="Include">
+                <e p="RequestExecutorBuilderExtensions.cs" t="Include" />
                 <e p="ServiceCollectionExtensions.cs" t="Include" />
+              </e>
+              <e p="GraphQL" t="Include">
+                <e p="EntityTypes" t="Include">
+                  <e p="RoleType.cs" t="Include" />
+                </e>
+                <e p="InputTypes" t="Include">
+                  <e p="CreateRoleInput.cs" t="Include" />
+                  <e p="UpdateRoleInput.cs" t="Include" />
+                </e>
+                <e p="MutationObjectTypeExtension.cs" t="Include" />
+                <e p="QueryObjectTypeExtension.cs" t="Include" />
+              </e>
+              <e p="Infrastructure" t="Include">
+                <e p="Repositories" t="Include">
+                  <e p="AuthorizedUserRepository.cs" t="Include" />
+                  <e p="RoleRepository.cs" t="Include" />
+                </e>
               </e>
               <e p="Initium.Api.Authorization.csproj" t="IncludeRecursive" />
               <e p="obj" t="ExcludeRecursive">
@@ -221,6 +244,12 @@
                   <e p="netstandard2.1" t="Include">
                     <e p="Initium.Api.Authorization.AssemblyInfo.cs" t="Include" />
                   </e>
+                </e>
+              </e>
+              <e p="Queries" t="Include">
+                <e p="Entities" t="Include">
+                  <e p="ReadOnlyResource.cs" t="Include" />
+                  <e p="ReadOnlyRole.cs" t="Include" />
                 </e>
               </e>
             </e>
@@ -234,6 +263,8 @@
                 </e>
               </e>
               <e p="EntityTypeConfigurations" t="Include">
+                <e p="ReadOnlyResourceEntityTypeConfiguration.cs" t="Include" />
+                <e p="ReadOnlyRoleEntityTypeConfiguration.cs" t="Include" />
                 <e p="UserEntityTypeConfiguration.cs" t="Include" />
               </e>
               <e p="Initium.Api.Authorization.SqlServer.csproj" t="IncludeRecursive" />

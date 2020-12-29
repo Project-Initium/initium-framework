@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
+using FluentValidation;
+using Initium.Api.Authentication.Core.DependencyInjection;
 using Initium.Api.Authorization.DependencyInjection;
 using Initium.Api.Authorization.Domain.AggregateModels.AuthorizedUserAggregate;
+using Initium.Api.Authorization.Domain.AggregateModels.RoleAggregate;
 using Initium.Api.Authorization.Domain.AggregateModels.UserWithRoleAggregate;
-using Initium.Api.Core.Contracts.Domain;
-using MaybeMonad;
+using Initium.Api.Authorization.Infrastructure.Repositories;
+using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
@@ -23,23 +23,12 @@ namespace Initium.Api.Authorization.Extensions
         {
             services.TryAddSingleton<IClock>(SystemClock.Instance);
             services.AddScoped<IAuthorizedUserRepository, AuthorizedUserRepository>();
+            services.AddScoped<IRoleRepository, RoleRepository>();
 
+            services.AddValidatorsFromAssembly(typeof(AuthorizationBuilder).Assembly);
+            services.AddMediatR(typeof(AuthorizationBuilder).Assembly);
+            
             return new AuthorizationBuilder(services);
-        }
-    }
-
-    public class AuthorizedUserRepository : IAuthorizedUserRepository
-    {
-        public IUnitOfWork UnitOfWork { get; }
-
-        public void Update(IAuthorizedUser authorizedUser)
-        {
-            throw new NotImplementedException();
-        }
-
-        public async Task<Maybe<AuthorizedAuthorizedUser>> Find(Guid userId, CancellationToken cancellationToken = default)
-        {
-            throw new NotImplementedException();
         }
     }
 }

@@ -82,6 +82,7 @@ namespace Initium.Examples.Api
                 .AddQueryType<QueryType>()
                 //.RegisterMultiTenant()
                 .RegisterAuthentication()
+                .RegisterAuthorization()
                 .AddFiltering()
                 .AddProjections()
                 .AddSorting()

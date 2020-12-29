@@ -18,12 +18,14 @@ namespace Initium.Api.Authorization.SqlServer.EntityTypeConfigurations
 
         public void Configure(EntityTypeBuilder<AuthorizedAuthorizedUser> userWithRoles)
         {
-            userWithRoles.ToTable("User", this._schemaIdentifier.SelectedSchema);
+            userWithRoles.ToView("vwAuthorizedUser", this._schemaIdentifier.SelectedSchema);
             userWithRoles.HasKey(userWithRole => userWithRole.Id);
             userWithRoles.Ignore(userWithRole => userWithRole.DomainEvents);
             userWithRoles.Ignore(userWithRole => userWithRole.IntegrationEvents);
             userWithRoles.Property(userWithRole => userWithRole.Id).ValueGeneratedNever();
             
+            var navigation = userWithRoles.Metadata.FindNavigation(nameof(AuthorizedAuthorizedUser.UserRoles));
+            navigation.SetPropertyAccessMode(PropertyAccessMode.Field);
         }
     }
 }

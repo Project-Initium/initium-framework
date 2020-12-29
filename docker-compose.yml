@@ -1,0 +1,16 @@
+version: "3"
+
+volumes:
+  initium-sql:
+    external: false
+    
+services:
+  server:
+    image: mcr.microsoft.com/mssql/server:2019-CU4-ubuntu-16.04
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=hriH_urnhk8ju
+    volumes:
+     - initium-sql:/var/opt/mssql
+    ports:
+      - "1434:1433"
