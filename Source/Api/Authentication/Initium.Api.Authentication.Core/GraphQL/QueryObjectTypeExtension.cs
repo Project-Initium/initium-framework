@@ -1,9 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using HotChocolate.Types;
 using Initium.Api.Authentication.Core.GraphQL.EntityTypes;
 using Initium.Api.Authentication.Core.GraphQL.QueryTypes;
 using Initium.Api.Authentication.Core.Infrastructure;
+using Initium.Api.Authentication.Core.Queries.Entities;
 using Initium.Api.Core.Database;
 using Initium.Api.Core.GraphQL;
 using Microsoft.EntityFrameworkCore;
@@ -25,16 +28,17 @@ namespace Initium.Api.Authentication.Core.GraphQL
                 .Resolver((ctx, token) =>
                 {
                     var context = ctx.Service<GenericDataContext>();
-                    var data = context.Set<Domain.AggregateModels.UserAggregate.User>().ToListAsync(token);
                     
-                    // var identityProviderClient = ctx.Service<IIdentityProviderClient>();
-                    //
-                    // ctx.
-                    // // query external
-                    // identityProviderClient.Search(ctx.GetSelections())
+                        
+                    var type = AppDomain.CurrentDomain.GetAssemblies()
+                    .SelectMany(s => s.GetTypes())
+                    .Single(p => typeof(IAuthenticatedReadOnlyUser).IsAssignableFrom(p));
 
-                    // get for database
-                    return new List<User>().AsQueryable();
+                    var contextType = typeof(GenericDataContext);
+                    
+                    context.Find(type);
+                    return contextType.GetMethod("set").MakeGenericMethod(type).Invoke(context, null);
+                    
                 })
                 ;
         }

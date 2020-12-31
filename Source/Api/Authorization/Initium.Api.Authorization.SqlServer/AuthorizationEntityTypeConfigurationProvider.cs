@@ -19,6 +19,10 @@ namespace Initium.Api.Authorization.SqlServer
             modelBuilder.ApplyConfiguration(new ReadOnlyRoleEntityTypeConfiguration(this._schemaIdentifier));
             modelBuilder.ApplyConfiguration(new ReadOnlyResourceEntityTypeConfiguration(this._schemaIdentifier));
             
+            
+            modelBuilder.ApplyConfiguration(new ReadOnlyRoleNavigationalEntityTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new ReadOnlyResourceNavigationalEntityTypeConfiguration());
+            
         }
     }
 }

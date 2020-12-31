@@ -2,9 +2,13 @@
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 
 using System;
+using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
 using Initium.Api.Core.Contracts.Domain;
+using Initium.Api.Core.Contracts.Queries;
+using Initium.Api.Core.Exceptions;
 using Initium.Api.Core.Extensions;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
@@ -30,6 +34,16 @@ namespace Initium.Api.Core.Database
             await this.SaveChangesAsync(cancellationToken);
             await mediator.DispatchIntegrationEventsAsync(this);
             return true;
+        }
+
+        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
+        {
+            if (this.ChangeTracker.Entries().Any(entityEntry => entityEntry.Entity is IReadOnlyEntity))
+            {
+                throw new CustomException("Trying to save read only entity");
+            }
+
+            return base.SaveChangesAsync(cancellationToken);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

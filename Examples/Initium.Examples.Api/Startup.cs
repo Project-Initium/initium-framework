@@ -59,7 +59,7 @@ namespace Initium.Examples.Api
                 .WithSqlServerStore();
                 
 
-            services.AddEntityFrameworkSqlServer();
+            //services.AddEntityFrameworkSqlServer();
 
             services.AddDbContext<GenericDataContext>((provider, builder) =>
             {

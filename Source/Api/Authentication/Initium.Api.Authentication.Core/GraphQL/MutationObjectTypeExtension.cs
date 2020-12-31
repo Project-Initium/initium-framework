@@ -26,7 +26,13 @@ namespace Initium.Api.Authentication.Core.GraphQL
                     var mediator = ctx.Service<IMediator>();
                     var input = ctx.ArgumentValue<CreateUserInput>("input");
                     await mediator.ThrowOnError(new CreateUserCommand(input.Id, input.EmailAddress, input.FirstName, input.LastName), token);
-                    return new User(input.Id, input.FirstName, input.LastName, input.EmailAddress);
+                    return new User
+                    {
+                        Id = input.Id,
+                        FirstName = input.FirstName,
+                        LastName = input.LastName,
+                        EmailAddress = input.EmailAddress, 
+                    };
                 }).Type<NonNullType<UserType>>();
 
             descriptor.Field("createInitialUser")
@@ -36,7 +42,13 @@ namespace Initium.Api.Authentication.Core.GraphQL
                     var mediator = ctx.Service<IMediator>();
                     var input = ctx.ArgumentValue<CreateInitialUserInput>("input");
                     await mediator.ThrowOnError(new CreateInitialUserCommand(input.Id, input.EmailAddress, input.FirstName, input.LastName, input.Password), token);
-                    return new User(input.Id, input.FirstName, input.LastName, input.EmailAddress);
+                    return new User
+                    {
+                        Id = input.Id,
+                        FirstName = input.FirstName,
+                        LastName = input.LastName,
+                        EmailAddress = input.EmailAddress, 
+                    };
                 }).Type<NonNullType<UserType>>();
 
             descriptor.Field("changePassword")

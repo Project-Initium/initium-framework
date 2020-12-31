@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Initium.Api.Authentication.Core.SqlServer.EntityTypeConfigurations
 {
-    public class ReadOnlyUserEntityTypeConfiguration : IEntityTypeConfiguration<ReadOnlyUser>
+    public class ReadOnlyUserEntityTypeConfiguration : IEntityTypeConfiguration<IAuthenticatedReadOnlyUser>
     {
         private readonly ISchemaIdentifier _schemaIdentifier;
     
@@ -14,10 +14,10 @@ namespace Initium.Api.Authentication.Core.SqlServer.EntityTypeConfigurations
             this._schemaIdentifier = schemaIdentifier;
         }
 
-        public void Configure(EntityTypeBuilder<ReadOnlyUser> users)
+        public void Configure(EntityTypeBuilder<IAuthenticatedReadOnlyUser> users)
         {
             users.ToTable("vwUser", this._schemaIdentifier.SelectedSchema);
-            users.HasNoKey();
+            //users.HasNoKey();
         }
     }
 }

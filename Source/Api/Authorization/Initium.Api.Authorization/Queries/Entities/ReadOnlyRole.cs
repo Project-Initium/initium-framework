@@ -13,6 +13,7 @@ namespace Initium.Api.Authorization.Queries.Entities
         public ReadOnlyRole()
         {
             this._resources = new List<ReadOnlyResource>();
+            this._users = new List<ReadOnlyUser>();
         }
         
         public Guid Id { get; private set; }

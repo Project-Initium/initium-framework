@@ -18,11 +18,7 @@ namespace Initium.Api.Authorization.SqlServer.EntityTypeConfigurations
 
         public void Configure(EntityTypeBuilder<ReadOnlyRole> readOnlyRoles)
         {
-            readOnlyRoles.ToView("vwResource", this._schemaIdentifier.SelectedSchema);
-            readOnlyRoles.HasNoKey();
-
-            var navigation = readOnlyRoles.Metadata.FindNavigation(nameof(ReadOnlyRole.Resources));
-            navigation.SetPropertyAccessMode(PropertyAccessMode.Field);
+            readOnlyRoles.ToView("vwRole", this._schemaIdentifier.SelectedSchema);
             
             readOnlyRoles
                 .HasMany(x => x.Users)
@@ -31,8 +27,17 @@ namespace Initium.Api.Authorization.SqlServer.EntityTypeConfigurations
                     $"[{this._schemaIdentifier.SelectedSchema}].[vwUserRole]",
                     b => b.HasOne<ReadOnlyUser>().WithMany().HasForeignKey("UserId"),
                     b => b.HasOne<ReadOnlyRole>().WithMany().HasForeignKey("RoleId")
-                );
+                ).Metadata.SetPropertyAccessMode(PropertyAccessMode.Field);
 
+        }
+    }
+    
+    public class ReadOnlyRoleNavigationalEntityTypeConfiguration : IEntityTypeConfiguration<ReadOnlyRole>
+    {
+        public void Configure(EntityTypeBuilder<ReadOnlyRole> readOnlyRoles)
+        {
+            // var navigation = readOnlyRoles.Metadata.FindNavigation(nameof(ReadOnlyRole.Resources));
+            // navigation.SetPropertyAccessMode(PropertyAccessMode.Field);
         }
     }
 }
