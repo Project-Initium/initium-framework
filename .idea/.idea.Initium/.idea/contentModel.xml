@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\andre\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\andre\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Initium.-1802509940.00" t="ExcludeRecursive" />
-    <e p="C:\Users\andre\Documents\code\project-initium\initium-framework" t="IncludeFlat">
+    <e p="C:\Users\andre\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Initium.2057644546.00" t="ExcludeRecursive" />
+    <e p="C:\Users\andre\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\andre\Documents\Github\project-initium\initium-framework" t="IncludeFlat">
       <e p="_" t="Include" />
       <e p="docker-compose.yml" t="Include" />
       <e p="Examples" t="Include">
@@ -148,10 +149,6 @@
                   <e p="20201217-2214_InitUser.sql" t="Include" />
                 </e>
               </e>
-              <e p="EntityTypeConfigurations" t="Include">
-                <e p="ReadOnlyUserEntityTypeConfiguration.cs" t="Include" />
-                <e p="UserEntityTypeConfiguration.cs" t="Include" />
-              </e>
               <e p="Initium.Api.Authentication.Core.SqlServer.csproj" t="IncludeRecursive" />
               <e p="obj" t="ExcludeRecursive">
                 <e p="Debug" t="Include">
@@ -164,118 +161,10 @@
           </e>
           <e p="Authorization" t="Include">
             <e p="Initium.Api.Authorization" t="IncludeRecursive">
-              <e p="bin" t="ExcludeRecursive" />
-              <e p="Constants" t="Include">
-                <e p="AuthorizationErrorCodes.cs" t="Include" />
-              </e>
-              <e p="DependencyInjection" t="Include">
-                <e p="AuthorizationBuilder.cs" t="Include" />
-              </e>
-              <e p="Domain" t="Include">
-                <e p="AggregateModels" t="Include">
-                  <e p="AuthorizedUserAggregate" t="Include">
-                    <e p="AuthorizedAuthorizedUser.cs" t="Include" />
-                    <e p="IAuthorizedUser.cs" t="Include" />
-                    <e p="IAuthorizedUserRepository.cs" t="Include" />
-                    <e p="UserRole.cs" t="Include" />
-                  </e>
-                  <e p="RoleAggregate" t="Include">
-                    <e p="IRole.cs" t="Include" />
-                    <e p="IRoleRepository.cs" t="Include" />
-                    <e p="Role.cs" t="Include" />
-                    <e p="RoleResource.cs" t="Include" />
-                  </e>
-                </e>
-                <e p="CommandHandlers" t="Include">
-                  <e p="RoleAggregate" t="Include">
-                    <e p="CreateRoleCommandHandler.cs" t="Include" />
-                    <e p="DeleteRoleCommandHandler.cs" t="Include" />
-                    <e p="UpdateRoleCommandHandler.cs" t="Include" />
-                  </e>
-                  <e p="UserAggregate" t="Include" />
-                </e>
-                <e p="CommandResults" t="Include">
-                  <e p="RoleAggregate" t="Include">
-                    <e p="CreateRoleCommandResult.cs" t="Include" />
-                  </e>
-                  <e p="UserAggregate" t="Include" />
-                </e>
-                <e p="Commands" t="Include">
-                  <e p="RoleAggregate" t="Include">
-                    <e p="CreateRoleCommand.cs" t="Include" />
-                    <e p="DeleteRoleCommand.cs" t="Include" />
-                    <e p="UpdateRoleCommand.cs" t="Include" />
-                  </e>
-                  <e p="UserAggregate" t="Include" />
-                </e>
-                <e p="CommandValidators" t="Include">
-                  <e p="RoleAggregate" t="Include">
-                    <e p="CreateRoleCommandValidator.cs" t="Include" />
-                    <e p="DeleteRoleCommandValidator.cs" t="Include" />
-                    <e p="UpdateRoleCommandValidator.cs" t="Include" />
-                  </e>
-                  <e p="UserAggregate" t="Include" />
-                </e>
-              </e>
-              <e p="Extensions" t="Include">
-                <e p="RequestExecutorBuilderExtensions.cs" t="Include" />
-                <e p="ServiceCollectionExtensions.cs" t="Include" />
-              </e>
-              <e p="GraphQL" t="Include">
-                <e p="EntityTypes" t="Include">
-                  <e p="RoleType.cs" t="Include" />
-                </e>
-                <e p="InputTypes" t="Include">
-                  <e p="CreateRoleInput.cs" t="Include" />
-                  <e p="UpdateRoleInput.cs" t="Include" />
-                </e>
-                <e p="MutationObjectTypeExtension.cs" t="Include" />
-                <e p="QueryObjectTypeExtension.cs" t="Include" />
-              </e>
-              <e p="Infrastructure" t="Include">
-                <e p="Repositories" t="Include">
-                  <e p="AuthorizedUserRepository.cs" t="Include" />
-                  <e p="RoleRepository.cs" t="Include" />
-                </e>
-              </e>
               <e p="Initium.Api.Authorization.csproj" t="IncludeRecursive" />
-              <e p="obj" t="ExcludeRecursive">
-                <e p="Debug" t="Include">
-                  <e p="net5.0" t="Include">
-                    <e p="Initium.Api.Authorization.AssemblyInfo.cs" t="Include" />
-                  </e>
-                </e>
-              </e>
-              <e p="Queries" t="Include">
-                <e p="Entities" t="Include">
-                  <e p="ReadOnlyResource.cs" t="Include" />
-                  <e p="ReadOnlyRole.cs" t="Include" />
-                </e>
-              </e>
             </e>
             <e p="Initium.Api.Authorization.SqlServer" t="IncludeRecursive">
-              <e p="AuthorizationBuilderExtensions.cs" t="Include" />
-              <e p="AuthorizationEntityTypeConfigurationProvider.cs" t="Include" />
-              <e p="bin" t="ExcludeRecursive" />
-              <e p="Database" t="Include">
-                <e p="AuthorizationDbMigrationEngine.cs" t="Include" />
-                <e p="Scripts" t="Include">
-                  <e p="20201228-0019_InitAuthorization.sql" t="Include" />
-                </e>
-              </e>
-              <e p="EntityTypeConfigurations" t="Include">
-                <e p="ReadOnlyResourceEntityTypeConfiguration.cs" t="Include" />
-                <e p="ReadOnlyRoleEntityTypeConfiguration.cs" t="Include" />
-                <e p="UserEntityTypeConfiguration.cs" t="Include" />
-              </e>
               <e p="Initium.Api.Authorization.SqlServer.csproj" t="IncludeRecursive" />
-              <e p="obj" t="ExcludeRecursive">
-                <e p="Debug" t="Include">
-                  <e p="net5.0" t="Include">
-                    <e p="Initium.Api.Authorization.SqlServer.AssemblyInfo.cs" t="Include" />
-                  </e>
-                </e>
-              </e>
             </e>
           </e>
           <e p="Initium.Api.Core" t="IncludeRecursive">
@@ -333,116 +222,10 @@
           </e>
           <e p="MultiTenant" t="Include">
             <e p="Initium.Api.MultiTenant" t="IncludeRecursive">
-              <e p="bin" t="ExcludeRecursive" />
-              <e p="Constants" t="Include">
-                <e p="MultiTenantErrorCodes.cs" t="Include" />
-              </e>
-              <e p="DependencyInjection" t="Include">
-                <e p="MultiTenantBuilder.cs" t="Include" />
-              </e>
-              <e p="Domain" t="Include">
-                <e p="AggregatesModel" t="Include">
-                  <e p="TenantAggregate" t="Include">
-                    <e p="ITenant.cs" t="Include" />
-                    <e p="ITenantRepository.cs" t="Include" />
-                    <e p="Tenant.cs" t="Include" />
-                  </e>
-                </e>
-                <e p="CommandHandlers" t="Include">
-                  <e p="TenantAggregate" t="Include">
-                    <e p="CreateTenantCommandHandler.cs" t="Include" />
-                    <e p="DisableTenantCommandHandler.cs" t="Include" />
-                    <e p="EnableTenantCommandHandler.cs" t="Include" />
-                    <e p="UpdateTenantCommandHandler.cs" t="Include" />
-                  </e>
-                </e>
-                <e p="Commands" t="Include">
-                  <e p="TenantAggregate" t="Include">
-                    <e p="CreateTenantCommand.cs" t="Include" />
-                    <e p="DisableTenantCommand.cs" t="Include" />
-                    <e p="EnableTenantCommand.cs" t="Include" />
-                    <e p="UpdateTenantCommand.cs" t="Include" />
-                  </e>
-                </e>
-                <e p="CommandValidators" t="Include">
-                  <e p="TenantAggregate" t="Include">
-                    <e p="CreateTenantCommandValidator.cs" t="Include" />
-                    <e p="DisableTenantCommandValidator.cs" t="Include" />
-                    <e p="EnableTenantCommandValidator.cs" t="Include" />
-                    <e p="UpdateTenantCommandValidator.cs" t="Include" />
-                  </e>
-                </e>
-              </e>
-              <e p="Extensions" t="Include">
-                <e p="RequestExecutorBuilderExtensions.cs" t="Include" />
-                <e p="ServiceCollectionExtensions.cs" t="Include" />
-              </e>
-              <e p="GraphQL" t="Include">
-                <e p="Inputs" t="Include">
-                  <e p="CreateTenantInput.cs" t="Include" />
-                  <e p="DisableTenantInput.cs" t="Include" />
-                  <e p="EnableTenantInput.cs" t="Include" />
-                  <e p="UpdateTenantInput.cs" t="Include" />
-                </e>
-                <e p="Types" t="Include">
-                  <e p="EntityTypes" t="Include">
-                    <e p="TenantType.cs" t="Include" />
-                  </e>
-                  <e p="InputTypes" t="Include">
-                    <e p="CreateTenantInputType.cs" t="Include" />
-                  </e>
-                  <e p="MutationObjectTypeExtension.cs" t="Include" />
-                  <e p="QueryObjectTypeExtension.cs" t="Include" />
-                </e>
-              </e>
-              <e p="Infrastructure" t="Include">
-                <e p="Repositories" t="Include">
-                  <e p="TenantRepository.cs" t="Include" />
-                </e>
-                <e p="Settings" t="Include">
-                  <e p="MultiTenantSettings.cs" t="Include" />
-                </e>
-                <e p="TenantIdentification" t="Include">
-                  <e p="CustomMultiTenantStore.cs" t="Include" />
-                  <e p="MultiTenantSchemaIdentifier.cs" t="Include" />
-                </e>
-              </e>
               <e p="Initium.Api.MultiTenant.csproj" t="IncludeRecursive" />
-              <e p="obj" t="ExcludeRecursive">
-                <e p="Debug" t="Include">
-                  <e p="net5.0" t="Include">
-                    <e p="Initium.Api.MultiTenant.AssemblyInfo.cs" t="Include" />
-                  </e>
-                </e>
-              </e>
-              <e p="Queries" t="Include">
-                <e p="Entities" t="Include">
-                  <e p="ReadOnlyTenant.cs" t="Include" />
-                </e>
-              </e>
             </e>
             <e p="Initium.Api.MultiTenant.SqlServer" t="IncludeRecursive">
-              <e p="bin" t="ExcludeRecursive" />
-              <e p="Database" t="Include">
-                <e p="MultiTenantDbMigrationEngine.cs" t="Include" />
-                <e p="Scripts" t="Include">
-                  <e p="20201216-2031_InitTenant.sql" t="Include" />
-                </e>
-              </e>
-              <e p="EntityTypeConfigurations" t="Include">
-                <e p="ReadOnlyTenantEntityTypeConfiguration.cs" t="Include" />
-                <e p="TenantEntityTypeConfiguration.cs" t="Include" />
-              </e>
               <e p="Initium.Api.MultiTenant.SqlServer.csproj" t="IncludeRecursive" />
-              <e p="MultiTenantBuilderExtensions.cs" t="Include" />
-              <e p="MultiTenantEntityTypeConfigurationProvider.cs" t="Include" />
-              <e p="obj" t="ExcludeRecursive">
-                <e p="Debug" t="Include">
-                  <e p="net5.0" t="Include">
-                    <e p="Initium.Api.MultiTenant.SqlServer.AssemblyInfo.cs" t="Include" />
-                  </e>
-                </e>
-              </e>
             </e>
           </e>
         </e>

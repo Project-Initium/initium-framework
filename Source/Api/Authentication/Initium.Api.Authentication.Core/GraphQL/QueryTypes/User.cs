@@ -15,4 +15,7 @@ namespace Initium.Api.Authentication.Core.GraphQL.QueryTypes
 
         public string EmailAddress { get; init; }
     }
-}
+}  
+
+
+

@@ -19,15 +19,17 @@ namespace Initium.Api.Authorization.SqlServer.EntityTypeConfigurations
         public void Configure(EntityTypeBuilder<ReadOnlyRole> readOnlyRoles)
         {
             readOnlyRoles.ToView("vwRole", this._schemaIdentifier.SelectedSchema);
-            
+
             readOnlyRoles
-                .HasMany(x => x.Users)
+                .HasMany("Users")
                 .WithMany("Roles")
-                .UsingEntity<Dictionary<string, object>>(
-                    $"[{this._schemaIdentifier.SelectedSchema}].[vwUserRole]",
-                    b => b.HasOne<ReadOnlyUser>().WithMany().HasForeignKey("UserId"),
-                    b => b.HasOne<ReadOnlyRole>().WithMany().HasForeignKey("RoleId")
-                ).Metadata.SetPropertyAccessMode(PropertyAccessMode.Field);
+                .UsingEntity(
+                    builder =>
+                    {
+                        builder.ToView("vwUserRole", this._schemaIdentifier.SelectedSchema);
+                        builder.HasOne("ReadOnlyUser", "User").WithMany().HasForeignKey("UserId");
+                        builder.HasOne("ReadOnlyRole", "Role").WithMany().HasForeignKey("RoleId");
+                    });
 
         }
     }

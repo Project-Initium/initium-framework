@@ -1,14 +1,15 @@
 using System;
 using HotChocolate.Types.Pagination;
 using Initium.Api.Authentication.Core.Extensions;
+using Initium.Api.Authentication.Core.GraphQL.EntityTypes;
 using Initium.Api.Authentication.Core.SqlServer;
-using Initium.Api.Authorization.Extensions;
-using Initium.Api.Authorization.SqlServer;
+// using Initium.Api.Authorization.Extensions;
+// using Initium.Api.Authorization.SqlServer;
 using Initium.Api.Core.Database;
 using Initium.Api.Core.GraphQL;
 using Initium.Api.Core.Settings;
-using Initium.Api.MultiTenant.Extensions;
-using Initium.Api.MultiTenant.SqlServer;
+// using Initium.Api.MultiTenant.Extensions;
+// using Initium.Api.MultiTenant.SqlServer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -55,8 +56,8 @@ namespace Initium.Examples.Api
             services.AddInitiumAuthentication(this.Configuration)
                 .WithSqlServerStore();
 
-            services.AddInitiumAuthorization(this.Configuration)
-                .WithSqlServerStore();
+            // services.AddInitiumAuthorization(this.Configuration)
+                // .WithSqlServerStore();
                 
 
             //services.AddEntityFrameworkSqlServer();
@@ -78,11 +79,14 @@ namespace Initium.Examples.Api
                 // })
                 //.AddErrorFilter<ValidationErrorFilter>()
                 .BindRuntimeType<Guid, GuidType>()
+                .BindRuntimeType<ReadOnlyUser, UserType>()
+                //.AddType<UserType>()
                 .AddMutationType<MutationType>()
                 .AddQueryType<QueryType>()
+                
                 //.RegisterMultiTenant()
                 .RegisterAuthentication()
-                .RegisterAuthorization()
+                //.RegisterAuthorization()
                 .AddFiltering()
                 .AddProjections()
                 .AddSorting()

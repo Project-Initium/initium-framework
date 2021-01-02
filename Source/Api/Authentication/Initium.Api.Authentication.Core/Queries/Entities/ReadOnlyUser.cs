@@ -3,7 +3,7 @@ using Initium.Api.Core.Contracts.Queries;
 
 namespace Initium.Api.Authentication.Core.Queries.Entities
 {
-    public interface IAuthenticatedReadOnlyUser : IReadOnlyEntity
+    public interface IReadOnlyUser : IReadOnlyEntity
     {
         public Guid Id { get; set; }
 

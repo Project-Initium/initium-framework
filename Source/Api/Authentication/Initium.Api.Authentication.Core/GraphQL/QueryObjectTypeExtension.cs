@@ -23,21 +23,27 @@ namespace Initium.Api.Authentication.Core.GraphQL
                 .Type<UserType>()
                 .UseOffsetPaging<UserType>()
                 .UseProjection()
-                .UseFiltering()
-                .UseSorting()
-                .Resolver((ctx, token) =>
+                 //.UseFiltering()
+                 //.UseSorting()
+                 .Resolver((ctx, token) =>
                 {
                     var context = ctx.Service<GenericDataContext>();
-                    
-                        
+
                     var type = AppDomain.CurrentDomain.GetAssemblies()
                     .SelectMany(s => s.GetTypes())
-                    .Single(p => typeof(IAuthenticatedReadOnlyUser).IsAssignableFrom(p));
+                    .Where(p => typeof(IReadOnlyUser).IsAssignableFrom(p)&& !p.IsInterface)
+                    .ToList();
 
                     var contextType = typeof(GenericDataContext);
                     
-                    context.Find(type);
-                    return contextType.GetMethod("set").MakeGenericMethod(type).Invoke(context, null);
+                    //context.Find(type.First());
+
+
+                    var m = contextType.GetMethod(
+                        nameof(GenericDataContext.Set), new Type[] {}
+                         );
+                    var gm = m.MakeGenericMethod(type.First());
+                    return gm.Invoke(context, null);
                     
                 })
                 ;
