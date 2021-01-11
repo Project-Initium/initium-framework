@@ -3,7 +3,6 @@
 
 using HotChocolate.Execution.Configuration;
 using Initium.Api.Authentication.Core.GraphQL;
-using Initium.Api.Authentication.Core.GraphQL.EntityTypes;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Initium.Api.Authentication.Core.Extensions
@@ -13,8 +12,7 @@ namespace Initium.Api.Authentication.Core.Extensions
         public static IRequestExecutorBuilder RegisterAuthentication(this IRequestExecutorBuilder builder)
         {
             return builder
-                .AddType<UserType>()
-                .AddType<QueryObjectTypeExtension>()
+                .AddType<CustomQueryTypeExtension>()
                 .AddType<MutationObjectTypeExtension>();
         }
     }

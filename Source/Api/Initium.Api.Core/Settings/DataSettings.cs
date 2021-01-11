@@ -2,6 +2,6 @@
 {
     public class DataSettings
     {
-        public string? PrimaryConnectionString { get; set; }
+        public string PrimaryConnectionString { get; set; }
     }
 }

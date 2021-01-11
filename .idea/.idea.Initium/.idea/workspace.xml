@@ -9,16 +9,31 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Initium/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Initium/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/config/applicationhost.config" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/config/applicationhost.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Examples/Initium.Examples.Api/Initium.Examples.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Initium.Examples.Api/Initium.Examples.Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/Initium.Examples.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Initium.Examples.Api/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Examples/Initium.Examples.Api/ReadOnlyUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Initium.Examples.Api/ReadOnlyUser.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Examples/Initium.Examples.Api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Initium.Examples.Api/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/Initium.Examples.Api/StartupService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Initium.Examples.Api/StartupService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Initium.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Initium.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.AzureActiveDirectoryB2C/Initium.Api.Authentication.AzureActiveDirectoryB2C.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.AzureActiveDirectoryB2C/Initium.Api.Authentication.AzureActiveDirectoryB2C.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core.SqlServer/AuthenticationEntityTypeConfigurationProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core.SqlServer/AuthenticationEntityTypeConfigurationProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core.SqlServer/EntityTypeConfigurations/ReadOnlyUserEntityTypeConfiguration.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core.SqlServer/EntityTypeConfigurations/UserEntityTypeConfiguration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core.SqlServer/Initium.Api.Authentication.Core.SqlServer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core.SqlServer/Initium.Api.Authentication.Core.SqlServer.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Extensions/RequestExecutorBuilderExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Extensions/RequestExecutorBuilderExtensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/GraphQL/EntityTypes/UserType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/GraphQL/EntityTypes/UserType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/GraphQL/MutationObjectTypeExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/GraphQL/MutationObjectTypeExtension.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/GraphQL/QueryObjectTypeExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/GraphQL/QueryObjectTypeExtension.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/GraphQL/QueryTypes/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/GraphQL/QueryTypes/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Queries/Entities/ReadOnlyUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Queries/Entities/ReadOnlyUser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization.SqlServer/EntityTypeConfigurations/ReadOnlyRoleEntityTypeConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization.SqlServer/EntityTypeConfigurations/ReadOnlyRoleEntityTypeConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Initium.Api.Authentication.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Initium.Api.Authentication.Core.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Initium.Api.Core/Contracts/Queries/IReadOnlyEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Initium.Api.Core/Contracts/Queries/IReadOnlyEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Initium.Api.Core/Database/CoreSchemaIdentifier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Initium.Api.Core/Database/CoreSchemaIdentifier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Initium.Api.Core/Database/DbSchemaAwareModelCacheKeyFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Initium.Api.Core/Database/DbSchemaAwareModelCacheKeyFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Initium.Api.Core/Domain/ErrorData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Initium.Api.Core/Domain/ErrorData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Initium.Api.Core/GraphQL/QueryType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Initium.Api.Core/GraphQL/CustomQueryType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Initium.Api.Core/GraphQL/TypesGuidType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Initium.Api.Core/GraphQL/GuidType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Initium.Api.Core/Initium.Api.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Initium.Api.Core/Initium.Api.Core.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Initium.Api.Core/ServiceRegistrationResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Initium.Api.Core/ServiceRegistrationResult.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/Initium.Api.Core/Settings/DataSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/Initium.Api.Core/Settings/DataSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/MultiTenant/Initium.Api.MultiTenant.SqlServer/Initium.Api.MultiTenant.SqlServer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/MultiTenant/Initium.Api.MultiTenant.SqlServer/Initium.Api.MultiTenant.SqlServer.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/MultiTenant/Initium.Api.MultiTenant/GraphQL/Types/QueryObjectTypeExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/MultiTenant/Initium.Api.MultiTenant/GraphQL/Types/QueryObjectTypeExtension.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Api/MultiTenant/Initium.Api.MultiTenant/Initium.Api.MultiTenant.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Api/MultiTenant/Initium.Api.MultiTenant/Initium.Api.MultiTenant.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,41 +52,44 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization.SqlServer/EntityTypeConfigurations/ReadOnlyRoleEntityTypeConfiguration.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/D2B0EF7B-A8C3-4AF1-95CC-501C0131D7BA/185/EntityTypeBuilder`.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E15E4113-0BF6-48E3-A775-8F58E49AEEF8/16/SchemaRequestExecutorBuilderExtensions.Types.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Examples/Initium.Examples.Api/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization/Infrastructure/Repositories/AuthorizedUserRepository.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization/Infrastructure/Repositories/RoleRepository.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization/Extensions/RequestExecutorBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization/Infrastructure/Repositories/AuthorizedUserRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization/Queries/Entities/ReadOnlyRole.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization.SqlServer/EntityTypeConfigurations/ReadOnlyResourceEntityTypeConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization.SqlServer/EntityTypeConfigurations/ReadOnlyRoleEntityTypeConfiguration.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6A76AC72-8C9A-45C7-84D2-56E1381B1B60/CE/NamedTypeBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/C80B499D-ADA7-49E0-A8EE-7A9B1744160B/2C3/AsyncValueTaskMethodBuilder.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization/Extensions/ServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization/GraphQL/QueryObjectTypeExtension.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D2B0EF7B-A8C3-4AF1-95CC-501C0131D7BA/1c/ee091f39/IEntityTypeConfiguration`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core.SqlServer/Database/AuthenticationDbMigrationEngine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/584068EE-8C69-4D79-B6A6-5EC9E1AD80EB/77/QueryableProjectionProvider.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F81F4ED3-5D2A-43DA-B9A7-54E5E9F9C1A1/9C/ResolverObjectFieldDescriptorExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization/GraphQL/EntityTypes/RoleType.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8ABD0A29-D701-4820-B3C0-8347295452A7/62/TypeKind.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3A5EB2D9-92D0-4007-AD4A-8BB3B7219B16/C0/FieldMiddlewareCompiler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3A5EB2D9-92D0-4007-AD4A-8BB3B7219B16/C8/InterfaceType.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3A5EB2D9-92D0-4007-AD4A-8BB3B7219B16/9C/ResolverObjectFieldDescriptorExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6A76AC72-8C9A-45C7-84D2-56E1381B1B60/D5/ObjectType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3A5EB2D9-92D0-4007-AD4A-8BB3B7219B16/ad/846a6606/IObjectTypeDescriptor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Examples/Initium.Examples.Api/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6A76AC72-8C9A-45C7-84D2-56E1381B1B60/f2/18f9e6f1/IObjectTypeDescriptor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Api/MultiTenant/Initium.Api.MultiTenant/GraphQL/Types/QueryObjectTypeExtension.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/Api/MultiTenant/Initium.Api.MultiTenant/Extensions/RequestExecutorBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B8D9CC95-5E93-43F4-9E71-576EB42EA623/72/088378fe/IObjectFieldDescriptor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization.SqlServer/AuthorizationBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization.SqlServer/EntityTypeConfigurations/UserEntityTypeConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E50AC9A3-25BA-4645-ABC6-611C41ACB074/8/ConcurrentDictionary.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization.SqlServer/AuthorizationEntityTypeConfigurationProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization/Extensions/ServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/D2B0EF7B-A8C3-4AF1-95CC-501C0131D7BA/11F/InternalModelBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/D2B0EF7B-A8C3-4AF1-95CC-501C0131D7BA/38/ModelBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/C80B499D-ADA7-49E0-A8EE-7A9B1744160B/2C4/AsyncValueTaskMethodBuilderT.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5845A916-29FA-4E1C-9728-5D4B842DFFDE/7/SelectionObjectFieldDescriptorExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/30B56AA8-F3E4-4323-9266-5172FC650731/4F/ResolverTask.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5845A916-29FA-4E1C-9728-5D4B842DFFDE/77/QueryableProjectionProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization/GraphQL/EntityTypes/RoleType.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core.SqlServer/Database/AuthenticationDbMigrationEngine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization/GraphQL/MutationObjectTypeExtension.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F81F4ED3-5D2A-43DA-B9A7-54E5E9F9C1A1/72/0d9ab7fb/IObjectFieldDescriptor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization/GraphQL/QueryObjectTypeExtension.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/GraphQL/EntityTypes/UserType.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization.SqlServer/MultiTenantBuilderExtensions.cs" />
-      <option value="$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization/Domain/AggregateModels/UserWithRoleAggregate/IUserWithRoleRepository.cs" />
-      <option value="$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization/Domain/AggregateModels/AuthorizedUserAggregate/AuthorizedUser.cs" />
-      <option value="$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization/Domain/AggregateModels/AuthorizedUserAggregate/IUserWithRole.cs" />
-      <option value="$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization/Domain/AggregateModels/AuthorizedUserAggregate/IAuthorizedUser.cs" />
-      <option value="$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization/Domain/AggregateModels/AuthorizedUserAggregate/IAuthorizedUserRepository.cs" />
-      <option value="$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization.SqlServer/Database/MultiTenantDbMigrationEngine.cs" />
-      <option value="$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization.SqlServer/Database/AuthorizationDbMigrationEngine.cs" />
-      <option value="$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization.SqlServer/AuthorizationBuilderExtensions.cs" />
-      <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core.SqlServer/Database/Scripts/20201217-2214_InitUser.sql" />
-      <option value="$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization/Domain/AggregateModels/RoleAggregate/IRole.cs" />
-      <option value="$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization/Domain/AggregateModels/RoleAggregate/IRoleRepository.cs" />
-      <option value="$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization/Domain/AggregateModels/RoleAggregate/Role.cs" />
-      <option value="$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization/Domain/AggregateModels/RoleAggregate/RoleResource.cs" />
       <option value="$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization/Domain/Commands/RoleAggregate/CreateRoleCommand.cs" />
       <option value="$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization/Domain/Commands/RoleAggregate/DeleteRoleCommand.cs" />
       <option value="$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization/Domain/Commands/RoleAggregate/UpdateRoleCommand.cs" />
@@ -93,7 +111,6 @@
       <option value="$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization/GraphQL/QueryObjectTypeExtension.cs" />
       <option value="$PROJECT_DIR$/Examples/Initium.Examples.Api/appsettings.json" />
       <option value="$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization.SqlServer/Database/Scripts/20201228-0019_InitAuthorization.sql" />
-      <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/GraphQL/MutationObjectTypeExtension.cs" />
       <option value="$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization/Queries/Entities/ReadOnlyRole.cs" />
       <option value="$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization.SqlServer/MultiTenantEntityTypeConfigurationProvider.cs" />
       <option value="$PROJECT_DIR$/Source/Api/Initium.Api.Core/Database/GenericDataContext.cs" />
@@ -102,13 +119,28 @@
       <option value="$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization/Extensions/RequestExecutorBuilderExtensions.cs" />
       <option value="$PROJECT_DIR$/Source/Api/Authorization/Initium.Api.Authorization.SqlServer/EntityTypeConfigurations/ReadOnlyRoleEntityTypeConfiguration.cs" />
       <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core.SqlServer/EntityTypeConfigurations/ReadOnlyUserEntityTypeConfiguration.cs" />
-      <option value="$PROJECT_DIR$/Examples/Initium.Examples.Api/ReadOnlyUser.cs" />
       <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/GraphQL/QueryTypes/User.cs" />
       <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Queries/Entities/ReadOnlyUser.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/GraphQL/MutationObjectTypeExtension.cs" />
+      <option value="$PROJECT_DIR$/Examples/Initium.Examples.Api/Test.cs" />
       <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core.SqlServer/AuthenticationEntityTypeConfigurationProvider.cs" />
-      <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/GraphQL/QueryObjectTypeExtension.cs" />
-      <option value="$PROJECT_DIR$/Examples/Initium.Examples.Api/Startup.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Initium.Api.Core/GraphQL/QueryType.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/Extensions/RequestExecutorBuilderExtensions.cs" />
       <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/GraphQL/EntityTypes/UserType.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/MultiTenant/Initium.Api.MultiTenant/GraphQL/Types/QueryObjectTypeExtension.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/GraphQL/QueryObjectTypeExtension.cs" />
+      <option value="$PROJECT_DIR$/Examples/Initium.Examples.Api/Program.cs" />
+      <option value="$PROJECT_DIR$/Examples/Initium.Examples.Api/ReadOnlyUser.cs" />
+      <option value="$PROJECT_DIR$/Examples/Initium.Examples.Api/StartupService.cs" />
+      <option value="$PROJECT_DIR$/Examples/Initium.Examples.Api/Startup.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Initium.Api.Core/Domain/ErrorData.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Initium.Api.Core/Settings/DataSettings.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Initium.Api.Core/GraphQL/TypesGuidType.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Initium.Api.Core/GraphQL/GuidType.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Initium.Api.Core/Contracts/Queries/IReadOnlyEntity.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Initium.Api.Core/Database/CoreSchemaIdentifier.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Initium.Api.Core/Database/DbSchemaAwareModelCacheKeyFactory.cs" />
+      <option value="$PROJECT_DIR$/Source/Api/Initium.Api.Core/ServiceRegistrationResult.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1m6EyIi72S314cOY5IUA3cIdpAj" />
@@ -120,11 +152,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34991798" />
-    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.300164" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3501094" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30021882" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="XThreadsFramesViewSplitterKey" value="0.5006258" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -216,6 +249,9 @@
       <workItem from="1609113295980" duration="5037000" />
       <workItem from="1609272905291" duration="8846000" />
       <workItem from="1609323975336" duration="3019000" />
+      <workItem from="1610015159779" duration="1115000" />
+      <workItem from="1610235669108" duration="18933000" />
+      <workItem from="1610359115561" duration="2027000" />
     </task>
     <servers />
   </component>
@@ -255,30 +291,43 @@
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core.SqlServer/AuthenticationEntityTypeConfigurationProvider.cs</url>
-          <line>22</line>
-          <properties documentPath="C:\Users\andre\Documents\Github\project-initium\initium-framework\Source\Api\Authentication\Initium.Api.Authentication.Core.SqlServer\AuthenticationEntityTypeConfigurationProvider.cs" initialLine="22" containingFunctionPresentation="method 'ApplyConfigurations'">
+          <url>file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/30B56AA8-F3E4-4323-9266-5172FC650731/4F/ResolverTask.cs</url>
+          <line>123</line>
+          <properties documentPath="C:\Users\andre\AppData\Roaming\JetBrains\Rider2020.3\resharper-host\SourcesCache\30B56AA8-F3E4-4323-9266-5172FC650731\4F\ResolverTask.cs" initialLine="123" containingFunctionPresentation="method 'ExecuteResolverPipelineAsync'">
             <startOffsets>
-              <option value="799" />
+              <option value="4202" />
             </startOffsets>
             <endOffsets>
-              <option value="845" />
+              <option value="4234" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="18" />
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/GraphQL/QueryObjectTypeExtension.cs</url>
-          <line>41</line>
-          <properties documentPath="C:\Users\andre\Documents\Github\project-initium\initium-framework\Source\Api\Authentication\Initium.Api.Authentication.Core\GraphQL\QueryObjectTypeExtension.cs" initialLine="41" containingFunctionPresentation="lambda expression inside method 'Configure'">
+          <line>42</line>
+          <properties documentPath="C:\Users\andre\Documents\code\project-initium\initium-framework\Source\Api\Authentication\Initium.Api.Authentication.Core\GraphQL\QueryObjectTypeExtension.cs" initialLine="51" containingFunctionPresentation="method 'Configure'">
             <startOffsets>
-              <option value="1476" />
+              <option value="1722" />
             </startOffsets>
             <endOffsets>
-              <option value="1604" />
+              <option value="1770" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="21" />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Source/Api/Authentication/Initium.Api.Authentication.Core/GraphQL/QueryObjectTypeExtension.cs</url>
+          <line>38</line>
+          <properties documentPath="C:\Users\andre\Documents\code\project-initium\initium-framework\Source\Api\Authentication\Initium.Api.Authentication.Core\GraphQL\QueryObjectTypeExtension.cs" initialLine="48" containingFunctionPresentation="method 'Configure'">
+            <startOffsets>
+              <option value="1384" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1709" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

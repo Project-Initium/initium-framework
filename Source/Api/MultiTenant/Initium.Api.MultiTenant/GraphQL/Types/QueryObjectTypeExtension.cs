@@ -10,11 +10,10 @@ namespace Initium.Api.MultiTenant.GraphQL.Types
     {
         protected override void Configure(IObjectTypeDescriptor descriptor)
         {
-            descriptor.Name(QueryType.TypeName);
+            descriptor.Name(CustomQueryType.TypeName);
             descriptor
                 .Field("tenants")
                 .Type<TenantType>()
-                //.UseDbContext<DataContext>()
                 .UseOffsetPaging<TenantType>()
                 .UseProjection()
                 .UseFiltering()

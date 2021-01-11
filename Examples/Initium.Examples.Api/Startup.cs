@@ -1,15 +1,14 @@
+// Copyright (c) Project Initium. All rights reserved.
+// Licensed under the MIT License. See LICENSE file in the project root for full license information.
+
 using System;
 using HotChocolate.Types.Pagination;
 using Initium.Api.Authentication.Core.Extensions;
 using Initium.Api.Authentication.Core.GraphQL.EntityTypes;
 using Initium.Api.Authentication.Core.SqlServer;
-// using Initium.Api.Authorization.Extensions;
-// using Initium.Api.Authorization.SqlServer;
 using Initium.Api.Core.Database;
 using Initium.Api.Core.GraphQL;
 using Initium.Api.Core.Settings;
-// using Initium.Api.MultiTenant.Extensions;
-// using Initium.Api.MultiTenant.SqlServer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -42,7 +41,6 @@ namespace Initium.Examples.Api
             this.Configuration = builder.Build();
         }
 
-
         private IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -50,17 +48,8 @@ namespace Initium.Examples.Api
         {
             services.Configure<DataSettings>(this.Configuration.GetSection("Data"));
 
-            //services.AddInitiumMultiTenant(this.Configuration)
-            //     .WithSqlServerStore();
-
             services.AddInitiumAuthentication(this.Configuration)
                 .WithSqlServerStore();
-
-            // services.AddInitiumAuthorization(this.Configuration)
-                // .WithSqlServerStore();
-                
-
-            //services.AddEntityFrameworkSqlServer();
 
             services.AddDbContext<GenericDataContext>((provider, builder) =>
             {
@@ -72,21 +61,11 @@ namespace Initium.Examples.Api
             });
 
             services.AddGraphQLServer()
-                //.UseField<CustomInputValidationMiddleware>()
-                // .AddFairyBread(options =>
-                // {
-                //     options.AssembliesToScanForValidators = new[] {typeof(CreateTenantInputValidator).Assembly};
-                // })
-                //.AddErrorFilter<ValidationErrorFilter>()
                 .BindRuntimeType<Guid, GuidType>()
                 .BindRuntimeType<ReadOnlyUser, UserType>()
-                //.AddType<UserType>()
                 .AddMutationType<MutationType>()
-                .AddQueryType<QueryType>()
-                
-                //.RegisterMultiTenant()
+                .AddQueryType<CustomQueryType>()
                 .RegisterAuthentication()
-                //.RegisterAuthorization()
                 .AddFiltering()
                 .AddProjections()
                 .AddSorting()
@@ -94,7 +73,7 @@ namespace Initium.Examples.Api
                 {
                     DefaultPageSize = 10,
                     IncludeTotalCount = true,
-                    MaxPageSize = 100
+                    MaxPageSize = 100,
                 });
 
             services.TryAddScoped<ISchemaIdentifier, CoreSchemaIdentifier>();

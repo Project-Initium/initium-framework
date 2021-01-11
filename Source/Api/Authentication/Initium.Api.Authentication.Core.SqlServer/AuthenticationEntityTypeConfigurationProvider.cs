@@ -27,14 +27,11 @@ namespace Initium.Api.Authentication.Core.SqlServer
                 .Single(p => typeof(IReadOnlyUser).IsAssignableFrom(p) && 
                              !p.IsInterface);
 
-                var mbType = typeof(ModelBuilder);
-            var method = mbType.GetMethod(nameof(ModelBuilder.Entity), 0);//, types: new []{typeof(Type)});
-            
-
             var t = modelBuilder.Entity(type);
                 
             t.ToTable("vwUser", this._schemaIdentifier.SelectedSchema);
             t.HasKey("Id");
+            
 
         }
 

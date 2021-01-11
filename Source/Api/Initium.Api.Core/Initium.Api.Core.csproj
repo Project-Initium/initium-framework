@@ -10,10 +10,10 @@
   <Import Project="..\..\..\Shared\Initium.Shared\Initium.Shared.projitems" Label="Shared" />
 
   <ItemGroup>
-    <PackageReference Include="FairyBread" Version="2.0.0-preview.1" />
+    <PackageReference Include="FairyBread" Version="3.0.0" />
     <PackageReference Include="Finbuckle.MultiTenant" Version="6.1.0" />
-    <PackageReference Include="FluentValidation" Version="8.6.3" />
-    <PackageReference Include="HotChocolate.Types" Version="11.0.4" />
+    <PackageReference Include="FluentValidation" Version="9.3.0" />
+    <PackageReference Include="HotChocolate.Types" Version="11.0.8-rc.3" />
     <PackageReference Include="MaybeMonad" Version="1.0.1.1" />
     <PackageReference Include="MediatR" Version="9.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.1" />
@@ -23,7 +23,7 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="5.0.0" />
     <PackageReference Include="ResultMonad" Version="1.0.1" />
-    <PackageReference Include="SonarAnalyzer.CSharp" Version="8.15.0.24505">
+    <PackageReference Include="SonarAnalyzer.CSharp" Version="8.16.0.25740">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>

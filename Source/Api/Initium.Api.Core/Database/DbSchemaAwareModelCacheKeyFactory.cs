@@ -6,16 +6,15 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 
 namespace Initium.Api.Core.Database
 {
-    public class DbSchemaAwareModelCacheKeyFactory 
+    public class DbSchemaAwareModelCacheKeyFactory
         : IModelCacheKeyFactory
     {
         public object Create(DbContext context)
         {
-            return new {
+            return new
+            {
                 Type = context.GetType(),
-                Schema = context is ISchemaIdentifier schema 
-                    ? schema.SelectedSchema 
-                    :  null
+                Schema = context is ISchemaIdentifier schema ? schema.SelectedSchema : null,
             };
         }
     }

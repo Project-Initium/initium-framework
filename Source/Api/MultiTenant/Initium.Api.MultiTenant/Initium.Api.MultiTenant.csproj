@@ -10,17 +10,20 @@
     <ItemGroup>
       <PackageReference Include="Dapper" Version="2.0.78" />
       <PackageReference Include="dbup" Version="4.5.0" />
-      <PackageReference Include="FairyBread" Version="2.0.0-preview.1" />
+      <PackageReference Include="FairyBread" Version="3.0.0" />
       <PackageReference Include="Finbuckle.MultiTenant" Version="6.1.0" />
       <PackageReference Include="Finbuckle.MultiTenant.AspNetCore" Version="6.1.0" />
-      <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="8.6.3" />
-      <PackageReference Include="HotChocolate.Data.EntityFramework" Version="11.0.4" />
+      <PackageReference Include="FluentValidation" Version="9.3.0" />
+      <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="9.3.0" />
+      <PackageReference Include="HotChocolate.Data.EntityFramework" Version="11.0.8-rc.3" />
+      <PackageReference Include="HotChocolate.Types" Version="11.0.8-rc.3" />
+      <PackageReference Include="HotChocolate.Types.OffsetPagination" Version="11.0.8-rc.3" />
       <PackageReference Include="MediatR" Version="9.0.0" />
       <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.1" />
       <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0" />
       <PackageReference Include="NodaTime" Version="3.0.3" />
-        <PackageReference Include="SonarAnalyzer.CSharp" Version="8.15.0.24505">
+        <PackageReference Include="SonarAnalyzer.CSharp" Version="8.16.0.25740">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>

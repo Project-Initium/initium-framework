@@ -2,7 +2,7 @@
 
 namespace Initium.Api.Core.GraphQL
 {
-    public class QueryType : ObjectType
+    public class CustomQueryType : ObjectType
     {
         public const string TypeName = "Queries";
 

@@ -13,78 +13,29 @@ namespace Initium.Api.Core.GraphQL
         private readonly string _format;
         private readonly string _alternateFormat = "D";
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="GuidType"/> class.
-        /// </summary>
         public GuidType()
             : this('\0')
         {
         }
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="GuidType"/> class.
-        /// </summary>
         public GuidType(char format)
             : this(ScalarNames.Uuid, format)
         {
         }
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="GuidType"/> class.
-        /// </summary>
         public GuidType(NameString name, char format = '\0')
             : this(name, null, format)
         {
         }
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="GuidType"/> class.
-        /// </summary>
-        public GuidType(NameString name, string? description, char format = '\0')
+        public GuidType(NameString name, string description, char format = '\0')
             : base(name, BindingBehavior.Implicit)
         {
             this.Description = description;
             this._format = CreateFormatString(format);
         }
 
-        protected override bool IsInstanceOfType(StringValueNode valueSyntax)
-        {
-            if (Utf8Parser.TryParse(
-                valueSyntax.AsSpan(), out Guid _, out int _, this._format[0]))
-            {
-                return true;
-            }
-            
-            return Utf8Parser.TryParse(
-                valueSyntax.AsSpan(), out Guid _, out int _, this._alternateFormat[0]);
-        }
-
-        protected override Guid ParseLiteral(StringValueNode valueSyntax)
-        {
-            if (Utf8Parser.TryParse(
-                valueSyntax.AsSpan(), out Guid formatGuid, out int _, this._format[0]))
-            {
-                return formatGuid;
-            }
-
-            if(Utf8Parser.TryParse(
-                valueSyntax.AsSpan(), out Guid altFormatGuid, out int _, this._alternateFormat[0]))
-            {
-                return altFormatGuid;
-            }
-
-            throw new SerializationException(
-                ScalarCannotParseLiteral(this.Name, valueSyntax.GetType()),
-                this);
-        }
-
-        protected override StringValueNode ParseValue(Guid runtimeValue)
-        {
-            return new StringValueNode(runtimeValue
-                .ToString(this._alternateFormat, CultureInfo.InvariantCulture));
-        }
-
-        public override IValueNode ParseResult(object? resultValue)
+        public override IValueNode ParseResult(object resultValue)
         {
             if (resultValue is null)
             {
@@ -106,7 +57,7 @@ namespace Initium.Api.Core.GraphQL
                 this);
         }
 
-        public override bool TrySerialize(object? runtimeValue, out object? resultValue)
+        public override bool TrySerialize(object runtimeValue, out object resultValue)
         {
             if (runtimeValue is null)
             {
@@ -124,7 +75,7 @@ namespace Initium.Api.Core.GraphQL
             return false;
         }
 
-        public override bool TryDeserialize(object? resultValue, out object? runtimeValue)
+        public override bool TryDeserialize(object resultValue, out object runtimeValue)
         {
             if (resultValue is null)
             {
@@ -146,6 +97,43 @@ namespace Initium.Api.Core.GraphQL
 
             runtimeValue = null;
             return false;
+        }
+
+        protected override bool IsInstanceOfType(StringValueNode valueSyntax)
+        {
+            if (Utf8Parser.TryParse(
+                valueSyntax.AsSpan(), out Guid _, out int _, this._format[0]))
+            {
+                return true;
+            }
+
+            return Utf8Parser.TryParse(
+                valueSyntax.AsSpan(), out Guid _, out int _, this._alternateFormat[0]);
+        }
+
+        protected override Guid ParseLiteral(StringValueNode valueSyntax)
+        {
+            if (Utf8Parser.TryParse(
+                valueSyntax.AsSpan(), out Guid formatGuid, out int _, this._format[0]))
+            {
+                return formatGuid;
+            }
+
+            if (Utf8Parser.TryParse(
+                valueSyntax.AsSpan(), out Guid altFormatGuid, out int _, this._alternateFormat[0]))
+            {
+                return altFormatGuid;
+            }
+
+            throw new SerializationException(
+                ScalarCannotParseLiteral(this.Name, valueSyntax.GetType()),
+                this);
+        }
+
+        protected override StringValueNode ParseValue(Guid runtimeValue)
+        {
+            return new StringValueNode(runtimeValue
+                .ToString(this._alternateFormat, CultureInfo.InvariantCulture));
         }
 
         private static string CreateFormatString(char format)

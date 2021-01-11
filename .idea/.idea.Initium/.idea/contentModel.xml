@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\andre\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\andre\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Initium.2057644546.00" t="ExcludeRecursive" />
-    <e p="C:\Users\andre\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
-    <e p="C:\Users\andre\Documents\Github\project-initium\initium-framework" t="IncludeFlat">
+    <e p="C:\Users\andre\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Initium.-1802509940.00" t="ExcludeRecursive" />
+    <e p="C:\Users\andre\Documents\code\project-initium\initium-framework" t="IncludeFlat">
       <e p="_" t="Include" />
       <e p="docker-compose.yml" t="Include" />
       <e p="Examples" t="Include">
@@ -159,14 +158,6 @@
               </e>
             </e>
           </e>
-          <e p="Authorization" t="Include">
-            <e p="Initium.Api.Authorization" t="IncludeRecursive">
-              <e p="Initium.Api.Authorization.csproj" t="IncludeRecursive" />
-            </e>
-            <e p="Initium.Api.Authorization.SqlServer" t="IncludeRecursive">
-              <e p="Initium.Api.Authorization.SqlServer.csproj" t="IncludeRecursive" />
-            </e>
-          </e>
           <e p="Initium.Api.Core" t="IncludeRecursive">
             <e p="bin" t="ExcludeRecursive" />
             <e p="Contracts" t="Include">
@@ -203,9 +194,9 @@
             </e>
             <e p="GraphQL" t="Include">
               <e p="CustomInputValidationMiddleware.cs" t="Include" />
+              <e p="CustomQueryType.cs" t="Include" />
+              <e p="GuidType.cs" t="Include" />
               <e p="MutationType.cs" t="Include" />
-              <e p="QueryType.cs" t="Include" />
-              <e p="TypesGuidType.cs" t="Include" />
             </e>
             <e p="Initium.Api.Core.csproj" t="IncludeRecursive" />
             <e p="obj" t="ExcludeRecursive">
@@ -218,14 +209,6 @@
             <e p="ServiceRegistrationResult.cs" t="Include" />
             <e p="Settings" t="Include">
               <e p="DataSettings.cs" t="Include" />
-            </e>
-          </e>
-          <e p="MultiTenant" t="Include">
-            <e p="Initium.Api.MultiTenant" t="IncludeRecursive">
-              <e p="Initium.Api.MultiTenant.csproj" t="IncludeRecursive" />
-            </e>
-            <e p="Initium.Api.MultiTenant.SqlServer" t="IncludeRecursive">
-              <e p="Initium.Api.MultiTenant.SqlServer.csproj" t="IncludeRecursive" />
             </e>
           </e>
         </e>
