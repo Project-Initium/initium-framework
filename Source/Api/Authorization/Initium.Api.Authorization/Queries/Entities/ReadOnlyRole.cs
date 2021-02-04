@@ -8,20 +8,32 @@ namespace Initium.Api.Authorization.Queries.Entities
     public class ReadOnlyRole : IReadOnlyEntity
     {
         private readonly List<ReadOnlyResource> _resources;
-        private readonly List<ReadOnlyUser> _users;
+        private readonly List<AuthorizedReadOnlyUser> _users;
 
         public ReadOnlyRole()
         {
             this._resources = new List<ReadOnlyResource>();
-            this._users = new List<ReadOnlyUser>();
+            this._users = new List<AuthorizedReadOnlyUser>();
         }
         
         public Guid Id { get; private set; }
         public string Name { get; private set; }
         
         public IReadOnlyList<ReadOnlyResource> Resources => this._resources.AsReadOnly();
-        public IReadOnlyList<ReadOnlyUser> Users => this._users.AsReadOnly();
+        public IReadOnlyList<AuthorizedReadOnlyUser> Users => this._users.AsReadOnly();
         
         
+    }
+
+    public interface IAuthorizedReadOnlyUser
+    {
+        IReadOnlyList<ReadOnlyRole> Roles { get; }
+    }
+
+    public abstract class AuthorizedReadOnlyUser : AuthenticatedReadOnlyUser, IAuthorizedReadOnlyUser
+    {
+        private readonly List<ReadOnlyRole> _roles = new List<ReadOnlyRole>();
+
+        public IReadOnlyList<ReadOnlyRole> Roles => this._roles.AsReadOnly();
     }
 }

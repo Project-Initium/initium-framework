@@ -4,9 +4,7 @@
 using FairyBread;
 using HotChocolate.Types;
 using Initium.Api.Authentication.Core.Domain.Commands.UserAggregate;
-using Initium.Api.Authentication.Core.GraphQL.EntityTypes;
 using Initium.Api.Authentication.Core.GraphQL.InputTypes;
-using Initium.Api.Authentication.Core.GraphQL.QueryTypes;
 using Initium.Api.Core.Extensions;
 using Initium.Api.Core.GraphQL;
 using MediatR;
@@ -19,37 +17,25 @@ namespace Initium.Api.Authentication.Core.GraphQL
         {
             descriptor.Name(MutationType.TypeName);
 
-            // descriptor.Field("createUser")
-            //     .Argument("input", x => x.Type(typeof(CreateUserInput)).UseValidation())
-            //     .Resolver(async (ctx, token) =>
-            //     {
-            //         var mediator = ctx.Service<IMediator>();
-            //         var input = ctx.ArgumentValue<CreateUserInput>("input");
-            //         await mediator.ThrowOnError(new CreateUserCommand(input.Id, input.EmailAddress, input.FirstName, input.LastName), token);
-            //         return new User
-            //         {
-            //             Id = input.Id,
-            //             FirstName = input.FirstName,
-            //             LastName = input.LastName,
-            //             EmailAddress = input.EmailAddress, 
-            //         };
-            //     }).Type<NonNullType<UserType>>();
-            //
-            // descriptor.Field("createInitialUser")
-            //     .Argument("input", x => x.Type(typeof(CreateInitialUserInput)).UseValidation())
-            //     .Resolver(async (ctx, token) =>
-            //     {
-            //         var mediator = ctx.Service<IMediator>();
-            //         var input = ctx.ArgumentValue<CreateInitialUserInput>("input");
-            //         await mediator.ThrowOnError(new CreateInitialUserCommand(input.Id, input.EmailAddress, input.FirstName, input.LastName, input.Password), token);
-            //         return new User
-            //         {
-            //             Id = input.Id,
-            //             FirstName = input.FirstName,
-            //             LastName = input.LastName,
-            //             EmailAddress = input.EmailAddress, 
-            //         };
-            //     }).Type<NonNullType<UserType>>();
+            descriptor.Field("createUser")
+                .Argument("input", x => x.Type(typeof(CreateUserInput)).UseValidation())
+                .Resolver(async (ctx, token) =>
+                {
+                    var mediator = ctx.Service<IMediator>();
+                    var input = ctx.ArgumentValue<CreateUserInput>("input");
+                    var result = await mediator.ThrowOnError(new CreateUserCommand(input.Id, input.EmailAddress, input.FirstName, input.LastName), token);
+                    return result.IsSuccess;
+                }).Type<NonNullType<BooleanType>>();
+
+            descriptor.Field("createInitialUser")
+                .Argument("input", x => x.Type(typeof(CreateInitialUserInput)).UseValidation())
+                .Resolver(async (ctx, token) =>
+                {
+                    var mediator = ctx.Service<IMediator>();
+                    var input = ctx.ArgumentValue<CreateInitialUserInput>("input");
+                    var result = await mediator.ThrowOnError(new CreateInitialUserCommand(input.Id, input.EmailAddress, input.FirstName, input.LastName, input.Password), token);
+                    return result.IsSuccess;
+                }).Type<NonNullType<BooleanType>>();
 
             descriptor.Field("changePassword")
                 .Argument("input", x => x.Type(typeof(ChangePasswordInput)).UseValidation())
@@ -57,8 +43,8 @@ namespace Initium.Api.Authentication.Core.GraphQL
                 {
                     var mediator = ctx.Service<IMediator>();
                     var input = ctx.ArgumentValue<ChangePasswordInput>("input");
-                    await mediator.ThrowOnError(new ChangePasswordCommand(input.Id, input.NewPassword), token);
-                    return true;
+                    var result = await mediator.ThrowOnError(new ChangePasswordCommand(input.Id, input.NewPassword), token);
+                    return result.IsSuccess;
                 }).Type<NonNullType<BooleanType>>();
 
             descriptor.Field("disableUser")
@@ -67,8 +53,8 @@ namespace Initium.Api.Authentication.Core.GraphQL
                 {
                     var mediator = ctx.Service<IMediator>();
                     var input = ctx.ArgumentValue<DisableUserInput>("input");
-                    await mediator.ThrowOnError(new DisableUserCommand(input.Id), token);
-                    return true;
+                    var result = await mediator.ThrowOnError(new DisableUserCommand(input.Id), token);
+                    return result.IsSuccess;
                 }).Type<NonNullType<BooleanType>>();
 
             descriptor.Field("enableUser")
@@ -77,8 +63,8 @@ namespace Initium.Api.Authentication.Core.GraphQL
                 {
                     var mediator = ctx.Service<IMediator>();
                     var input = ctx.ArgumentValue<EnableUserInput>("input");
-                    await mediator.ThrowOnError(new EnableUserCommand(input.Id), token);
-                    return true;
+                    var result = await mediator.ThrowOnError(new EnableUserCommand(input.Id), token);
+                    return result.IsSuccess;
                 }).Type<NonNullType<BooleanType>>();
         }
     }

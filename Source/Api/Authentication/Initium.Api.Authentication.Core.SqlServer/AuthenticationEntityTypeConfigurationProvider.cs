@@ -24,13 +24,13 @@ namespace Initium.Api.Authentication.Core.SqlServer
             
             var type = AppDomain.CurrentDomain.GetAssemblies()
                 .SelectMany(s => s.GetTypes())
-                .Single(p => typeof(IReadOnlyUser).IsAssignableFrom(p) && 
-                             !p.IsInterface);
+                .Single(p => typeof(IAuthenticatedReadOnlyUser).IsAssignableFrom(p) && 
+                             !p.IsInterface && !p.IsAbstract);
 
             var t = modelBuilder.Entity(type);
                 
             t.ToTable("vwUser", this._schemaIdentifier.SelectedSchema);
-            t.HasKey("Id");
+            //t.HasKey("Id");
             
 
         }

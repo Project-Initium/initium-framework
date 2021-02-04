@@ -12,7 +12,6 @@ namespace Initium.Api.Authentication.Core.Extensions
         public static IRequestExecutorBuilder RegisterAuthentication(this IRequestExecutorBuilder builder)
         {
             return builder
-                .AddType<CustomQueryTypeExtension>()
                 .AddType<MutationObjectTypeExtension>();
         }
     }
